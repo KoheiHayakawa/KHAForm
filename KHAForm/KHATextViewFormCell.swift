@@ -8,9 +8,9 @@
 
 import UIKit
 
-class KHATextViewFormCell: KHAFormCell {
+public class KHATextViewFormCell: KHAFormCell {
     
-    let textView: UIPlaceholderTextView = UIPlaceholderTextView()
+    public let textView: UIPlaceholderTextView = UIPlaceholderTextView()
     
     private let kCellHeight: CGFloat = 144
     private let kFontSize: CGFloat = 16
@@ -64,11 +64,11 @@ class KHATextViewFormCell: KHAFormCell {
 }
 
 
-class UIPlaceholderTextView: UITextView {
+public class UIPlaceholderTextView: UITextView {
     
     lazy var placeholderLabel:UILabel = UILabel()
     var placeholderColor:UIColor      = UIColor.lightGrayColor()
-    var placeholder:NSString          = ""
+    public var placeholder:NSString          = ""
     
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
@@ -79,7 +79,7 @@ class UIPlaceholderTextView: UITextView {
         self.textChanged(nil)
     }
     
-    override internal func drawRect(rect: CGRect) {
+    override public func drawRect(rect: CGRect) {
 
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "textChanged:", name: UITextViewTextDidChangeNotification, object: nil)
         

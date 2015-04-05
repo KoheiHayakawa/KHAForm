@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum KHAFormCellType: Int {
+public enum KHAFormCellType: Int {
     
     case TextField
     case SegmentedControl
@@ -31,10 +31,11 @@ enum KHAFormCellType: Int {
     }
 }
 
-protocol KHAFormDataSource {
-    func formCellsInForm(form: KHAForm) -> [[KHAFormCell]]
+public protocol KHAFormDataSource {
+     func formCellsInForm(form: KHAForm) -> [[KHAFormCell]]
 }
 
+public
 class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, KHAFormDataSource {
     
     private var cells:[[KHAFormCell]] = [[]]
@@ -45,7 +46,7 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
         self.init(style: .Grouped)
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         // register cells
@@ -65,16 +66,16 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
         First index determines section and second index determines row.
         This method must be overridden in subclass.
     */
-    func formCellsInForm(form: KHAForm) -> [[KHAFormCell]] {
+    public func formCellsInForm(form: KHAForm) -> [[KHAFormCell]] {
         return  cells
     }
 
-    func initFormCellWithType(type: KHAFormCellType) -> UITableViewCell {
+    public func initFormCellWithType(type: KHAFormCellType) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(type.cellId()) as UITableViewCell
         return cell
     }
 
-    func formCellForIndexPath(indexPath: NSIndexPath) -> UITableViewCell {
+    public func formCellForIndexPath(indexPath: NSIndexPath) -> UITableViewCell {
         var before = false
         if hasInlineDatePicker() {
             before = (datePickerIndexPath?.row < indexPath.row) && (datePickerIndexPath?.section == indexPath.section)
@@ -91,16 +92,16 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
 
     // MARK: - UITableViewDataSource
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override public func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let cell = formCellForIndexPath(indexPath)
         return cell.bounds.height
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return cells.count
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if hasInlineDatePickerAtSection(section) {
             // we have a date picker, so allow for it in the number of rows in this section
@@ -109,7 +110,7 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
         return cells[section].count;
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell = formCellForIndexPath(indexPath)
         
@@ -130,7 +131,7 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
     
     // MARK: - UITableViewDelegate
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let cell = tableView.cellForRowAtIndexPath(indexPath)
 
@@ -273,11 +274,11 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
     
     // MARK: - Delegate
     
-    func textFieldDidBeginEditing(textField: UITextField) {
+    public func textFieldDidBeginEditing(textField: UITextField) {
         removeAnyDatePickerCell()
     }
 
-    func textViewDidBeginEditing(textView: UITextView) {
+    public func textViewDidBeginEditing(textView: UITextView) {
         removeAnyDatePickerCell()
     }
 }

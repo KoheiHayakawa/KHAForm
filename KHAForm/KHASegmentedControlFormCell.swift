@@ -8,9 +8,9 @@
 
 import UIKit
 
-class KHASegmentedControlFormCell: KHAFormCell {
+public class KHASegmentedControlFormCell: KHAFormCell {
     
-    let segmentedControl: UISegmentedControl = UISegmentedControl()
+    public let segmentedControl: UISegmentedControl = UISegmentedControl()
     
     class var cellID: String {
         return "KHASegmentedControlCell"

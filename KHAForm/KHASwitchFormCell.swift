@@ -8,9 +8,9 @@
 
 import UIKit
 
-class KHASwitchFormCell: KHAFormCell {
+public class KHASwitchFormCell: KHAFormCell {
 
-    let sswitch: UISwitch = UISwitch()
+    public let sswitch: UISwitch = UISwitch()
     
     class var cellID: String {
         return "KHASwitchCell"

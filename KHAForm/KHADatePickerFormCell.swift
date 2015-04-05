@@ -8,9 +8,9 @@
 
 import UIKit
 
-class KHADatePickerFormCell: KHAFormCell {
+public class KHADatePickerFormCell: KHAFormCell {
     
-    let datePicker: UIDatePicker = UIDatePicker()
+    public let datePicker: UIDatePicker = UIDatePicker()
     
     private let kCellHeight: CGFloat = 216
     

@@ -8,9 +8,9 @@
 
 import UIKit
 
-class KHAButtonFormCell: KHAFormCell {
+public class KHAButtonFormCell: KHAFormCell {
     
-    let button: UIButton = UIButton()
+    public let button: UIButton = UIButton()
     
     private let kFontSize: CGFloat = 15
     

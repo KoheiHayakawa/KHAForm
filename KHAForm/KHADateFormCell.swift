@@ -8,9 +8,9 @@
 
 import UIKit
 
-class KHADateFormCell: KHAFormCell {
+public class KHADateFormCell: KHAFormCell {
     
-    var date: NSDate? {
+    public var date: NSDate? {
         willSet {
             if let newValue = newValue {
                 super.detailTextLabel?.text = dateFotmatter.stringFromDate(newValue)

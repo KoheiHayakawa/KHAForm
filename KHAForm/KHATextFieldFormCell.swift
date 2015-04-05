@@ -8,9 +8,9 @@
 
 import UIKit
 
-class KHATextFieldFormCell: KHAFormCell {
+public class KHATextFieldFormCell: KHAFormCell {
     
-    let textField: UITextField = UITextField()
+    public let textField: UITextField = UITextField()
     
     class var cellID: String {
         return "KHATextFieldCell"
