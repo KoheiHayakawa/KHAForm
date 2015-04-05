@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55EC5ADC1AD11CEB00B0F964 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC5ADB1AD11CEB00B0F964 /* AppDelegate.swift */; };
-		55EC5ADE1AD11CEB00B0F964 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC5ADD1AD11CEB00B0F964 /* ViewController.swift */; };
+		55EC5ADE1AD11CEB00B0F964 /* ExampleFormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC5ADD1AD11CEB00B0F964 /* ExampleFormTableViewController.swift */; };
 		55EC5AE11AD11CEB00B0F964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EC5ADF1AD11CEB00B0F964 /* Main.storyboard */; };
 		55EC5AE31AD11CEB00B0F964 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EC5AE21AD11CEB00B0F964 /* Images.xcassets */; };
 		55EC5AE61AD11CEB00B0F964 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55EC5AE41AD11CEB00B0F964 /* LaunchScreen.xib */; };
@@ -31,7 +31,7 @@
 		55EC5AD61AD11CEB00B0F964 /* KHAFormDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHAFormDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EC5ADA1AD11CEB00B0F964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55EC5ADB1AD11CEB00B0F964 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55EC5ADD1AD11CEB00B0F964 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55EC5ADD1AD11CEB00B0F964 /* ExampleFormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleFormTableViewController.swift; sourceTree = "<group>"; };
 		55EC5AE01AD11CEB00B0F964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55EC5AE21AD11CEB00B0F964 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		55EC5AE51AD11CEB00B0F964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				55EC5ADB1AD11CEB00B0F964 /* AppDelegate.swift */,
-				55EC5ADD1AD11CEB00B0F964 /* ViewController.swift */,
+				55EC5ADD1AD11CEB00B0F964 /* ExampleFormTableViewController.swift */,
 				55EC5ADF1AD11CEB00B0F964 /* Main.storyboard */,
 				55EC5AE21AD11CEB00B0F964 /* Images.xcassets */,
 				55EC5AE41AD11CEB00B0F964 /* LaunchScreen.xib */,
@@ -287,7 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55EC5ADE1AD11CEB00B0F964 /* ViewController.swift in Sources */,
+				55EC5ADE1AD11CEB00B0F964 /* ExampleFormTableViewController.swift in Sources */,
 				55EC5ADC1AD11CEB00B0F964 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
