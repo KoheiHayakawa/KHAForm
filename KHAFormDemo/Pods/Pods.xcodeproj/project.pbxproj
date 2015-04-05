@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09187CB4EC8B825A66EB9B8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9E055A37735644BF6D28F0 /* Foundation.framework */; };
+		17D7D68CB3384178D1F38814 /* KHAForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1E7187BC86EFE4CF98EC5 /* KHAForm.swift */; };
+		1BEFDEF922C89C3609FCD690 /* KHATextViewFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD85CF5166030967BB51BC88 /* KHATextViewFormCell.swift */; };
+		41CCE235E248C16FEEDF8C0F /* Pods-KHAForm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC7F1A7C95EA21D60994789 /* Pods-KHAForm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72CD2AB1EBF8D61F282E54FC /* Pods-KHAForm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DED5E0C4D0C6A18E2503C6A /* Pods-KHAForm-dummy.m */; };
+		86AD2C4A2FA904794DCEA487 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9E055A37735644BF6D28F0 /* Foundation.framework */; };
+		9B414D2AD865BBB9CCEE5E3A /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5A655BAC087A412214F173 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3B1AF49C4FFD9957F17777 /* KHADateFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C4B778D89DA3F1227C9E7 /* KHADateFormCell.swift */; };
+		BE978F638FE29084F31522A6 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6144710D008BF5EE469FEDC0 /* Pods-dummy.m */; };
+		C440B457CE5270858D9D79F3 /* KHASegmentedControlFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123EB22FFF99F2000BE83E58 /* KHASegmentedControlFormCell.swift */; };
+		C842D57E6EBF6066B7751188 /* KHASwitchFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695D2B4721E84DE71711E373 /* KHASwitchFormCell.swift */; };
+		D7CA9BEF6CF0A34BA25528BE /* KHADatePickerFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A24DD5E69CA0CF4C84E0045 /* KHADatePickerFormCell.swift */; };
+		DFEC2CA4E484F723751EE4B8 /* KHAFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93630A87CDB39132EA58B4F8 /* KHAFormCell.swift */; };
+		E32800BE40D1B3D763F5DA20 /* KHAButtonFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44295D136EFE9C2ED5CE7568 /* KHAButtonFormCell.swift */; };
+		EDC7B8A57FFD6C08823D3205 /* KHATextFieldFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9896D237E4FE21A743BF0336 /* KHATextFieldFormCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95C521958BD5620B7E0C834A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D95C82611B2938D83E88C17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EF538AAE38C14E88C49F70A;
+			remoteInfo = "Pods-KHAForm";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06FE6A1D323851AA59EE416E /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0C84F009969DD994D5CCF47A /* Pods-KHAForm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KHAForm-prefix.pch"; sourceTree = "<group>"; };
+		123EB22FFF99F2000BE83E58 /* KHASegmentedControlFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHASegmentedControlFormCell.swift; sourceTree = "<group>"; };
+		1B8BEA3E18E9F8E2FA0E8B0D /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		1C9E055A37735644BF6D28F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		44295D136EFE9C2ED5CE7568 /* KHAButtonFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHAButtonFormCell.swift; sourceTree = "<group>"; };
+		4DED5E0C4D0C6A18E2503C6A /* Pods-KHAForm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KHAForm-dummy.m"; sourceTree = "<group>"; };
+		5A24DD5E69CA0CF4C84E0045 /* KHADatePickerFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHADatePickerFormCell.swift; sourceTree = "<group>"; };
+		6144710D008BF5EE469FEDC0 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		62AA5202CDD914F936436FFF /* Pods-KHAForm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KHAForm.xcconfig"; sourceTree = "<group>"; };
+		695D2B4721E84DE71711E373 /* KHASwitchFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHASwitchFormCell.swift; sourceTree = "<group>"; };
+		76C1F66C2B41E29DAB0A81F1 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		82053FDD1552916D392BC29A /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		84AE74D35C5392F02D869DFE /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		899287933258479040E9418E /* Pods-KHAForm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KHAForm.modulemap"; sourceTree = "<group>"; };
+		93630A87CDB39132EA58B4F8 /* KHAFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHAFormCell.swift; sourceTree = "<group>"; };
+		973EFD099E3B1339A8A4A571 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		9896D237E4FE21A743BF0336 /* KHATextFieldFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHATextFieldFormCell.swift; sourceTree = "<group>"; };
+		9A5A655BAC087A412214F173 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		9DC7F1A7C95EA21D60994789 /* Pods-KHAForm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KHAForm-umbrella.h"; sourceTree = "<group>"; };
+		A35AA9753D5794672743A38A /* Pods-KHAForm-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KHAForm-Private.xcconfig"; sourceTree = "<group>"; };
+		AB13860F64A81A46080BCFBD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		AB6316DEA2BB2DD620E06281 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		AD4C4B778D89DA3F1227C9E7 /* KHADateFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHADateFormCell.swift; sourceTree = "<group>"; };
+		AD85CF5166030967BB51BC88 /* KHATextViewFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHATextViewFormCell.swift; sourceTree = "<group>"; };
+		AF4EA0BB9B0A2C91540B7493 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B311B9AE0A98E8D16A4B8C72 /* KHAForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KHAForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C38BF28927557FAFECE75878 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E1E7187BC86EFE4CF98EC5 /* KHAForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHAForm.swift; sourceTree = "<group>"; };
+		D3010D9584D436844B3E6CAC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF72B2B41DDB716377948E6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		171F18FA435E9D042695A53E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86AD2C4A2FA904794DCEA487 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B18EE127470E0EAD58FE69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09187CB4EC8B825A66EB9B8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10340C6BEDB5AFCFF20CD4C6 = {
+			isa = PBXGroup;
+			children = (
+				06FE6A1D323851AA59EE416E /* Podfile */,
+				B1419B9D1D2706DE7026624D /* Development Pods */,
+				AF7F1183837EBEEAC41AAB11 /* Frameworks */,
+				D9BD79FAAF0A1C439E50C7F7 /* Products */,
+				83697E555DA40D09D093A96E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		5902857ED8D52CE736E32CFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3010D9584D436844B3E6CAC /* Info.plist */,
+				76C1F66C2B41E29DAB0A81F1 /* Pods.modulemap */,
+				AF4EA0BB9B0A2C91540B7493 /* Pods-acknowledgements.markdown */,
+				AB6316DEA2BB2DD620E06281 /* Pods-acknowledgements.plist */,
+				6144710D008BF5EE469FEDC0 /* Pods-dummy.m */,
+				82053FDD1552916D392BC29A /* Pods-environment.h */,
+				84AE74D35C5392F02D869DFE /* Pods-frameworks.sh */,
+				1B8BEA3E18E9F8E2FA0E8B0D /* Pods-resources.sh */,
+				9A5A655BAC087A412214F173 /* Pods-umbrella.h */,
+				973EFD099E3B1339A8A4A571 /* Pods.debug.xcconfig */,
+				AB13860F64A81A46080BCFBD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		83697E555DA40D09D093A96E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5902857ED8D52CE736E32CFC /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		94092B3735914BAFD37B8522 /* KHAForm */ = {
+			isa = PBXGroup;
+			children = (
+				D8B7744EC087362825742FE5 /* KHAForm */,
+				E8B672A402F52E73DA200160 /* Support Files */,
+			);
+			name = KHAForm;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		AF7F1183837EBEEAC41AAB11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAF01DD350B8DFEA2D0AD789 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1419B9D1D2706DE7026624D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94092B3735914BAFD37B8522 /* KHAForm */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D8B7744EC087362825742FE5 /* KHAForm */ = {
+			isa = PBXGroup;
+			children = (
+				44295D136EFE9C2ED5CE7568 /* KHAButtonFormCell.swift */,
+				AD4C4B778D89DA3F1227C9E7 /* KHADateFormCell.swift */,
+				5A24DD5E69CA0CF4C84E0045 /* KHADatePickerFormCell.swift */,
+				C3E1E7187BC86EFE4CF98EC5 /* KHAForm.swift */,
+				93630A87CDB39132EA58B4F8 /* KHAFormCell.swift */,
+				123EB22FFF99F2000BE83E58 /* KHASegmentedControlFormCell.swift */,
+				695D2B4721E84DE71711E373 /* KHASwitchFormCell.swift */,
+				9896D237E4FE21A743BF0336 /* KHATextFieldFormCell.swift */,
+				AD85CF5166030967BB51BC88 /* KHATextViewFormCell.swift */,
+			);
+			path = KHAForm;
+			sourceTree = "<group>";
+		};
+		D9BD79FAAF0A1C439E50C7F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B311B9AE0A98E8D16A4B8C72 /* KHAForm.framework */,
+				C38BF28927557FAFECE75878 /* Pods.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8B672A402F52E73DA200160 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF72B2B41DDB716377948E6C /* Info.plist */,
+				899287933258479040E9418E /* Pods-KHAForm.modulemap */,
+				62AA5202CDD914F936436FFF /* Pods-KHAForm.xcconfig */,
+				A35AA9753D5794672743A38A /* Pods-KHAForm-Private.xcconfig */,
+				4DED5E0C4D0C6A18E2503C6A /* Pods-KHAForm-dummy.m */,
+				0C84F009969DD994D5CCF47A /* Pods-KHAForm-prefix.pch */,
+				9DC7F1A7C95EA21D60994789 /* Pods-KHAForm-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "KHAFormDemo/Pods/Target Support Files/Pods-KHAForm";
+			sourceTree = "<group>";
+		};
+		FAF01DD350B8DFEA2D0AD789 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1C9E055A37735644BF6D28F0 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AB4339960E4EBF003DE046F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41CCE235E248C16FEEDF8C0F /* Pods-KHAForm-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89EDB564DA42D018C9EB286 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B414D2AD865BBB9CCEE5E3A /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2EF538AAE38C14E88C49F70A /* Pods-KHAForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73CA1DD56C8B6113096923C7 /* Build configuration list for PBXNativeTarget "Pods-KHAForm" */;
+			buildPhases = (
+				5B6317BCF22B88520D0D8175 /* Sources */,
+				171F18FA435E9D042695A53E /* Frameworks */,
+				AB4339960E4EBF003DE046F7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KHAForm";
+			productName = "Pods-KHAForm";
+			productReference = B311B9AE0A98E8D16A4B8C72 /* KHAForm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3DFC3184F22DCA2AA8917877 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9507F6621E5EBBC51723A4D5 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				4D87052C32324CDD9AD333D7 /* Sources */,
+				21B18EE127470E0EAD58FE69 /* Frameworks */,
+				F89EDB564DA42D018C9EB286 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14CC6DDDEC87471401E4A0B0 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = C38BF28927557FAFECE75878 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D95C82611B2938D83E88C17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 46970199D40814CF701F9BAC /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 10340C6BEDB5AFCFF20CD4C6;
+			productRefGroup = D9BD79FAAF0A1C439E50C7F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DFC3184F22DCA2AA8917877 /* Pods */,
+				2EF538AAE38C14E88C49F70A /* Pods-KHAForm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D87052C32324CDD9AD333D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE978F638FE29084F31522A6 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B6317BCF22B88520D0D8175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32800BE40D1B3D763F5DA20 /* KHAButtonFormCell.swift in Sources */,
+				9D3B1AF49C4FFD9957F17777 /* KHADateFormCell.swift in Sources */,
+				D7CA9BEF6CF0A34BA25528BE /* KHADatePickerFormCell.swift in Sources */,
+				17D7D68CB3384178D1F38814 /* KHAForm.swift in Sources */,
+				DFEC2CA4E484F723751EE4B8 /* KHAFormCell.swift in Sources */,
+				C440B457CE5270858D9D79F3 /* KHASegmentedControlFormCell.swift in Sources */,
+				C842D57E6EBF6066B7751188 /* KHASwitchFormCell.swift in Sources */,
+				EDC7B8A57FFD6C08823D3205 /* KHATextFieldFormCell.swift in Sources */,
+				1BEFDEF922C89C3609FCD690 /* KHATextViewFormCell.swift in Sources */,
+				72CD2AB1EBF8D61F282E54FC /* Pods-KHAForm-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14CC6DDDEC87471401E4A0B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KHAForm";
+			target = 2EF538AAE38C14E88C49F70A /* Pods-KHAForm */;
+			targetProxy = 95C521958BD5620B7E0C834A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2704C7A7E47DD2821B927784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A35AA9753D5794672743A38A /* Pods-KHAForm-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KHAForm/Pods-KHAForm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-KHAForm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-KHAForm/Pods-KHAForm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KHAForm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3715C09A03EC7E72DDAD256C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		461FDC5676A71406B87B6013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB13860F64A81A46080BCFBD /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52613580581C8485FC36A45B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A47B62B0173520E860542C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 973EFD099E3B1339A8A4A571 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7AD260EA6DE5E0F89CA4DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A35AA9753D5794672743A38A /* Pods-KHAForm-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KHAForm/Pods-KHAForm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-KHAForm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-KHAForm/Pods-KHAForm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KHAForm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46970199D40814CF701F9BAC /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52613580581C8485FC36A45B /* Debug */,
+				3715C09A03EC7E72DDAD256C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73CA1DD56C8B6113096923C7 /* Build configuration list for PBXNativeTarget "Pods-KHAForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2704C7A7E47DD2821B927784 /* Debug */,
+				B7AD260EA6DE5E0F89CA4DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9507F6621E5EBBC51723A4D5 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47B62B0173520E860542C29 /* Debug */,
+				461FDC5676A71406B87B6013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D95C82611B2938D83E88C17 /* Project object */;
+}
