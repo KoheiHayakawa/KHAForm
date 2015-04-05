@@ -93,3 +93,9 @@ class ExampleFormTableViewController: KHAForm { // Implement subclass of KHAForm
     
 }
 ```
+
+###Contact
+[@kohei_hayakawa](https://twitter.com/kohei_hayakawa)
+
+###License
+KHAForm is released under the MIT license. See LICENSE for details.
