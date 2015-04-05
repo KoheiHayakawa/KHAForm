@@ -12,9 +12,10 @@
 ###Usage
 ```swift
 import UIKit
+import KHAForm
 
-class ExampleForm: KHAForm { // Implement subclass of KHAForm
-
+class ExampleFormTableViewController: KHAForm { // Implement subclass of KHAForm
+    
     // override a method to determine form structure
     override func formCellsInForm(form: KHAForm) -> [[KHAFormCell]] {
         
@@ -55,7 +56,7 @@ class ExampleForm: KHAForm { // Implement subclass of KHAForm
         // First index determines section and second index determines row.
         return [[cell1, cell2, cell3], [cell4, cell5], [cell6], [cell7, cell8]]
     }
-
+    
     func didPressedDeleteButton(sender: UIButton) {
         println("delete")
         
@@ -77,5 +78,6 @@ class ExampleForm: KHAForm { // Implement subclass of KHAForm
     func didPressedCancelButton(sender: UIButton) {
         println("cancel")
     }
+    
 }
 ```
