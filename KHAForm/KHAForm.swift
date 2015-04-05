@@ -42,7 +42,7 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
     private var datePickerIndexPath: NSIndexPath?
     
     // Form is always grouped tableview
-    convenience override init() {
+    convenience public override init() {
         self.init(style: .Grouped)
     }
     
