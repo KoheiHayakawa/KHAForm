@@ -5,6 +5,18 @@
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
 
+###CocoaPods
+~~~
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'KHAForm'
+~~~
+
+###Requirements
+* iOS 8.0+
+* Xcode 6.2+
+
 ###Screen Shots
 <img alt="Screen Shot 01" src="https://raw.githubusercontent.com/wiki/KoheiHayakawa/Form/images/screen_shot_01.png" width="200"/>
 <img alt="Screen Shot 02" src="https://raw.githubusercontent.com/wiki/KoheiHayakawa/Form/images/screen_shot_02.png" width="200"/>
