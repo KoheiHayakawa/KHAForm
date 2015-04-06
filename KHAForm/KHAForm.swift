@@ -29,6 +29,18 @@ public enum KHAFormCellType: Int {
         case .Button:           return KHAButtonFormCell.cellID
         }
     }
+    
+    private func cellClass() -> AnyClass {
+        switch self {
+        case .TextField:        return KHATextFieldFormCell.self
+        case .SegmentedControl: return KHASegmentedControlFormCell.self
+        case .Switch:           return KHASwitchFormCell.self
+        case .Date:             return KHADateFormCell.self
+        case .DatePicker:       return KHADatePickerFormCell.self
+        case .TextView:         return KHATextViewFormCell.self
+        case .Button:           return KHAButtonFormCell.self
+        }
+    }
 }
 
 public protocol KHAFormDataSource {
@@ -48,16 +60,7 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-
-        // register cells
-        tableView.registerClass(KHATextFieldFormCell.self, forCellReuseIdentifier: KHATextFieldFormCell.cellID)
-        tableView.registerClass(KHASegmentedControlFormCell.self, forCellReuseIdentifier: KHASegmentedControlFormCell.cellID)
-        tableView.registerClass(KHASwitchFormCell.self, forCellReuseIdentifier: KHASwitchFormCell.cellID)
-        tableView.registerClass(KHADateFormCell.self, forCellReuseIdentifier: KHADateFormCell.cellID)
-        tableView.registerClass(KHADatePickerFormCell.self, forCellReuseIdentifier: KHADatePickerFormCell.cellID)
-        tableView.registerClass(KHATextViewFormCell.self, forCellReuseIdentifier: KHATextViewFormCell.cellID)
-        tableView.registerClass(KHAButtonFormCell.self, forCellReuseIdentifier: KHAButtonFormCell.cellID)
-
+        
         // init form structure
         cells = formCellsInForm(self)
     }
@@ -70,9 +73,18 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
         return  cells
     }
 
-    public func initFormCellWithType(type: KHAFormCellType) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(type.cellId()) as UITableViewCell
-        return cell
+    public func initFormCellWithType(type: KHAFormCellType) -> KHAFormCell {
+        // Register the picker cell if form has a date cell and still not registered
+        if type == .Date && tableView.dequeueReusableCellWithIdentifier(type.cellId()) == nil {
+            tableView.registerClass(KHADatePickerFormCell.self, forCellReuseIdentifier: KHADatePickerFormCell.cellID)
+        }
+        // Register initialized cell if form doesn't have that cell
+        if let cell = tableView.dequeueReusableCellWithIdentifier(type.cellId()) as? KHAFormCell {
+            return cell
+        } else {
+            tableView.registerClass(type.cellClass(), forCellReuseIdentifier: type.cellId())
+            return tableView.dequeueReusableCellWithIdentifier(type.cellId()) as KHAFormCell
+        }
     }
 
     public func formCellForIndexPath(indexPath: NSIndexPath) -> UITableViewCell {
