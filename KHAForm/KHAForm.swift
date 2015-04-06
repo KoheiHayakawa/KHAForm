@@ -126,16 +126,18 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
         
         var cell = formCellForIndexPath(indexPath)
         
-        switch cell.reuseIdentifier! {
-        case KHAFormCellType.TextField.cellId():
-            (cell as KHATextFieldFormCell).textField.delegate = self
-        case KHAFormCellType.TextView.cellId():
-            (cell as KHATextViewFormCell).textView.delegate = self
-            cell.selectionStyle = .None;
-        case KHAFormCellType.DatePicker.cellId():
-            (cell as KHADatePickerFormCell).datePicker.addTarget(self, action: Selector("didDatePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
-        default:
-            break // do nothing
+        if let cellID = cell.reuseIdentifier {
+            switch cellID {
+            case KHAFormCellType.TextField.cellId():
+                (cell as KHATextFieldFormCell).textField.delegate = self
+            case KHAFormCellType.TextView.cellId():
+                (cell as KHATextViewFormCell).textView.delegate = self
+                cell.selectionStyle = .None;
+            case KHAFormCellType.DatePicker.cellId():
+                (cell as KHADatePickerFormCell).datePicker.addTarget(self, action: Selector("didDatePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+            default:
+                break // do nothing
+            }
         }
         return cell
     }
