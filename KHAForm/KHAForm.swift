@@ -50,7 +50,7 @@ public protocol KHAFormDataSource {
 public
 class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, KHAFormDataSource {
     
-    private var cells:[[KHAFormCell]] = [[]]
+    private var cells = [[KHAFormCell]]()
     private var datePickerIndexPath: NSIndexPath?
     
     // Form is always grouped tableview
