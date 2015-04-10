@@ -94,11 +94,11 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
         }
         let row = (before ? indexPath.row - 1 : indexPath.row)
         
-        var cell = tableView.dequeueReusableCellWithIdentifier(KHAFormCellType.DatePicker.cellId()) as! UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier(KHAFormCellType.DatePicker.cellId()) as? UITableViewCell
         if !hasPickerAtIndexPath(indexPath) {
             cell = cells[indexPath.section][row]
         }
-        return cell
+        return cell!
     }
     
 
