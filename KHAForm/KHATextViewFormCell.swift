@@ -61,6 +61,10 @@ public class KHATextViewFormCell: KHAFormCell {
                 constant: kCellHeight)]
         )
     }
+
+    required public init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
 
@@ -68,15 +72,10 @@ public class UIPlaceholderTextView: UITextView {
     
     lazy var placeholderLabel:UILabel = UILabel()
     var placeholderColor:UIColor      = UIColor.lightGrayColor()
-    public var placeholder:NSString          = ""
+    public var placeholder:NSString   = ""
     
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
-    }
-    
-    func setText(text:NSString) {
-        super.text = text
-        self.textChanged(nil)
     }
     
     override public func drawRect(rect: CGRect) {
@@ -92,13 +91,13 @@ public class UIPlaceholderTextView: UITextView {
             self.placeholderLabel.textColor       = self.placeholderColor
             self.placeholderLabel.alpha           = 0
             self.placeholderLabel.tag             = 999            
-            self.placeholderLabel.text = self.placeholder
+            self.placeholderLabel.text = self.placeholder as String
             self.placeholderLabel.sizeToFit()
             self.addSubview(placeholderLabel)
         }
         self.sendSubviewToBack(placeholderLabel)
         
-        if(self.text.utf16Count == 0 && self.placeholder.length > 0){
+        if(count(self.text) == 0 && self.placeholder.length > 0){
             self.viewWithTag(999)?.alpha = 1
         }
         super.drawRect(rect)
@@ -108,7 +107,7 @@ public class UIPlaceholderTextView: UITextView {
         if(self.placeholder.length == 0){
             return
         }
-        if(countElements(self.text) == 0) {
+        if(count(self.text) == 0) {
             self.viewWithTag(999)?.alpha = 1
         }else{
             self.viewWithTag(999)?.alpha = 0

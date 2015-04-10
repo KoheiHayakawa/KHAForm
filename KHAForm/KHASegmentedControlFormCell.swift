@@ -10,7 +10,7 @@ import UIKit
 
 public class KHASegmentedControlFormCell: KHAFormCell {
     
-    public let segmentedControl: UISegmentedControl = UISegmentedControl()
+    public var segmentedControl: UISegmentedControl = UISegmentedControl()
     
     class var cellID: String {
         return "KHASegmentedControlCell"
@@ -22,5 +22,9 @@ public class KHASegmentedControlFormCell: KHAFormCell {
         super.textLabel?.text = "Label"
         segmentedControl = UISegmentedControl(items: ["First", "Second"])
         super.accessoryView = segmentedControl
+    }
+
+    required public init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

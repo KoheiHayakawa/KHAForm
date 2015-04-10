@@ -53,4 +53,8 @@ public class KHATextFieldFormCell: KHAFormCell {
                 constant: 44)]
         )
     }    
+
+    required public init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

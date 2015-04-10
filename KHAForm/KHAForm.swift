@@ -54,7 +54,7 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
     private var datePickerIndexPath: NSIndexPath?
     
     // Form is always grouped tableview
-    convenience public override init() {
+    convenience public init() {
         self.init(style: .Grouped)
     }
     
@@ -83,7 +83,7 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
             return cell
         } else {
             tableView.registerClass(type.cellClass(), forCellReuseIdentifier: type.cellId())
-            return tableView.dequeueReusableCellWithIdentifier(type.cellId()) as KHAFormCell
+            return tableView.dequeueReusableCellWithIdentifier(type.cellId()) as! KHAFormCell
         }
     }
 
@@ -94,7 +94,7 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
         }
         let row = (before ? indexPath.row - 1 : indexPath.row)
         
-        var cell = tableView.dequeueReusableCellWithIdentifier(KHAFormCellType.DatePicker.cellId()) as UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier(KHAFormCellType.DatePicker.cellId()) as! UITableViewCell
         if !hasPickerAtIndexPath(indexPath) {
             cell = cells[indexPath.section][row]
         }
@@ -129,12 +129,12 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
         if let cellID = cell.reuseIdentifier {
             switch cellID {
             case KHAFormCellType.TextField.cellId():
-                (cell as KHATextFieldFormCell).textField.delegate = self
+                (cell as! KHATextFieldFormCell).textField.delegate = self
             case KHAFormCellType.TextView.cellId():
-                (cell as KHATextViewFormCell).textView.delegate = self
+                (cell as! KHATextViewFormCell).textView.delegate = self
                 cell.selectionStyle = .None;
             case KHAFormCellType.DatePicker.cellId():
-                (cell as KHADatePickerFormCell).datePicker.addTarget(self, action: Selector("didDatePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+                (cell as! KHADatePickerFormCell).datePicker.addTarget(self, action: Selector("didDatePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
             default:
                 break // do nothing
             }
@@ -165,9 +165,9 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
     private func updateDatePicker() {
         if let indexPath = datePickerIndexPath {
             if let associatedDatePickerCell = tableView.cellForRowAtIndexPath(indexPath) {
-                let cell = cells[indexPath.section][indexPath.row - 1] as KHADateFormCell
+                let cell = cells[indexPath.section][indexPath.row - 1] as! KHADateFormCell
                 if let date = cell.date {
-                    (associatedDatePickerCell as KHADatePickerFormCell).datePicker.setDate(date, animated: false)
+                    (associatedDatePickerCell as! KHADatePickerFormCell).datePicker.setDate(date, animated: false)
                 }
             }
         }
@@ -190,7 +190,7 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
     /*! Determines if the UITableViewController has a UIDatePicker in any of its cells.
     */
     private func hasInlineDatePicker() -> Bool {
-        return datePickerIndexPath? != nil
+        return datePickerIndexPath != nil
     }
     
     /*! Adds or removes a UIDatePicker cell below the given indexPath.
@@ -279,7 +279,7 @@ class KHAForm: UITableViewController, UITextFieldDelegate, UITextViewDelegate, K
         
         // update the cell's date string
         if let selectedIndexPath = targetedCellIndexPath {
-            var cell = tableView.cellForRowAtIndexPath(targetedCellIndexPath!) as KHADateFormCell
+            var cell = tableView.cellForRowAtIndexPath(targetedCellIndexPath!) as! KHADateFormCell
             let targetedDatePicker = sender
             cell.date = targetedDatePicker.date
         }
