@@ -14,8 +14,9 @@ pod 'KHAForm'
 ~~~
 
 ###Requirements
-* iOS 8.0+
-* Xcode 6.2+
+* iOS 8.3
+* Xcode 6.3
+* Swift 1.2
 
 ###Screen Shots
 <img alt="Screen Shot 01" src="https://raw.githubusercontent.com/wiki/KoheiHayakawa/Form/images/screen_shot_01.png" width="200"/>
@@ -40,7 +41,8 @@ class ExampleFormTableViewController: KHAForm { // Implement subclass of KHAForm
         let cell6 = initFormCellWithType(.TextView)         as KHATextViewFormCell
         let cell7 = initFormCellWithType(.Button)           as KHAButtonFormCell
         let cell8 = initFormCellWithType(.Button)           as KHAButtonFormCell
-        
+        let cell9 = KHAFormCell()   // we can use custom cell
+
         // settings for each cell
         cell1.textField.text = "Title"
         cell1.textField.placeholder = "placeholder"
@@ -64,9 +66,11 @@ class ExampleFormTableViewController: KHAForm { // Implement subclass of KHAForm
         cell8.button.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
         cell8.button.addTarget(self, action: Selector("didPressedCancelButton:"), forControlEvents: UIControlEvents.TouchUpInside)
         
+        cell9.textLabel?.text = "custom cell"
+        
         // Form structure is determined by using two-dimensional array.
         // First index determines section and second index determines row.
-        return [[cell1, cell2, cell3], [cell4, cell5], [cell6], [cell7, cell8]]
+        return [[cell1, cell2, cell3], [cell4, cell5], [cell6], [cell7, cell8], [cell9]]
     }
     
     func didPressedDeleteButton(sender: UIButton) {
