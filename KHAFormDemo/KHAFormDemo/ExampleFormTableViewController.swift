@@ -9,7 +9,7 @@
 import UIKit
 import KHAForm
 
-class ExampleFormTableViewController: KHAForm { // Implement subclass of KHAForm
+class ExampleFormTableViewController: KHAFormController { // Implement subclass of KHAForm
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,17 +21,17 @@ class ExampleFormTableViewController: KHAForm { // Implement subclass of KHAForm
     }
     
     // override a method to determine form structure
-    override func formCellsInForm(form: KHAForm) -> [[KHAFormCell]] {
+    override func formCellsInForm(form: KHAFormController) -> [[KHAFormCell]] {
         
         // setup cells
-        let cell1 = initFormCellWithType(.TextField)        as! KHATextFieldFormCell
-        let cell2 = initFormCellWithType(.SegmentedControl) as! KHASegmentedControlFormCell
-        let cell3 = initFormCellWithType(.Switch)           as! KHASwitchFormCell
-        let cell4 = initFormCellWithType(.Date)             as! KHADateFormCell
-        let cell5 = initFormCellWithType(.Date)             as! KHADateFormCell
-        let cell6 = initFormCellWithType(.TextView)         as! KHATextViewFormCell
-        let cell7 = initFormCellWithType(.Button)           as! KHAButtonFormCell
-        let cell8 = initFormCellWithType(.Button)           as! KHAButtonFormCell
+        let cell1 = KHAFormCell.formCellWithType(.TextField)        as! KHATextFieldFormCell
+        let cell2 = KHAFormCell.formCellWithType(.SegmentedControl) as! KHASegmentedControlFormCell
+        let cell3 = KHAFormCell.formCellWithType(.Switch)           as! KHASwitchFormCell
+        let cell4 = KHAFormCell.formCellWithType(.Date)             as! KHADateFormCell
+        let cell5 = KHAFormCell.formCellWithType(.Date)             as! KHADateFormCell
+        let cell6 = KHAFormCell.formCellWithType(.TextView)         as! KHATextViewFormCell
+        let cell7 = KHAFormCell.formCellWithType(.Button)           as! KHAButtonFormCell
+        let cell8 = KHAFormCell.formCellWithType(.Button)           as! KHAButtonFormCell
         let cell9 = KHAFormCell()   // we can use custom cell
         
         // settings for each cell
