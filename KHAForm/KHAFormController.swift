@@ -111,9 +111,7 @@ class KHAFormController: UITableViewController, UITextFieldDelegate, UITextViewD
         if let indexPath = datePickerIndexPath {
             if let associatedDatePickerCell = tableView.cellForRowAtIndexPath(indexPath) {
                 let cell = cells[indexPath.section][indexPath.row - 1] as! KHADateFormCell
-                if let date = cell.date {
-                    (associatedDatePickerCell as! KHADatePickerFormCell).datePicker.setDate(date, animated: false)
-                }
+                (associatedDatePickerCell as! KHADatePickerFormCell).datePicker.setDate(cell.date, animated: false)
             }
         }
     }

@@ -22,7 +22,7 @@ public enum KHAFormCellType {
 public class KHAFormCell: UITableViewCell {
 
     public let button: UIButton = UIButton()
-    public var date: NSDate?
+    public var date: NSDate = NSDate()
     public var dateFotmatter = NSDateFormatter()
     public let datePicker: UIDatePicker = UIDatePicker()
     public var segmentedControl: UISegmentedControl = UISegmentedControl()
