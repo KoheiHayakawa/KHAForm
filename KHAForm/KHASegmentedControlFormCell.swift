@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class KHASegmentedControlFormCell: KHAFormCell {
+class KHASegmentedControlFormCell: KHAFormCell {
         
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -18,7 +18,7 @@ public class KHASegmentedControlFormCell: KHAFormCell {
         accessoryView = segmentedControl
     }
 
-    required public init(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

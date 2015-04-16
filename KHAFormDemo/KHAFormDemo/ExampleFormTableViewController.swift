@@ -9,7 +9,7 @@
 import UIKit
 import KHAForm
 
-class ExampleFormTableViewController: KHAFormController { // Implement subclass of KHAForm
+class ExampleFormTableViewController: KHAFormController, KHAFormControllerDataSource { // Implement subclass of KHAForm
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class ExampleFormTableViewController: KHAFormController { // Implement subclass 
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     // override a method to determine form structure
     override func formCellsInForm(form: KHAFormController) -> [[KHAFormCell]] {
         

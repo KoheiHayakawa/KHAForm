@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class KHASwitchFormCell: KHAFormCell {
+class KHASwitchFormCell: KHAFormCell {
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -17,7 +17,7 @@ public class KHASwitchFormCell: KHAFormCell {
         accessoryView = sswitch
     }
 
-    required public init(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

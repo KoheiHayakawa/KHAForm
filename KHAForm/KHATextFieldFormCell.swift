@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class KHATextFieldFormCell: KHAFormCell {
+class KHATextFieldFormCell: KHAFormCell {
     
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
@@ -49,7 +49,7 @@ public class KHATextFieldFormCell: KHAFormCell {
         )
     }    
 
-    required public init(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

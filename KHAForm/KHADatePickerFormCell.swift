@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class KHADatePickerFormCell: KHAFormCell {
+class KHADatePickerFormCell: KHAFormCell {
         
     private let kCellHeight: CGFloat = 216
     
@@ -22,7 +22,7 @@ public class KHADatePickerFormCell: KHAFormCell {
         contentView.addSubview(datePicker)
     }
 
-    required public init(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

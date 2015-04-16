@@ -9,7 +9,7 @@
 import UIKit
 
 public protocol KHAFormControllerDataSource {
-     func formCellsInForm(form: Self) -> [[KHAFormCell]]
+     func formCellsInForm(form: KHAFormController) -> [[KHAFormCell]]
 }
 
 public

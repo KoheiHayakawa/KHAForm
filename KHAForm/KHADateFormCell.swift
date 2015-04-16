@@ -8,9 +8,9 @@
 
 import UIKit
 
-public class KHADateFormCell: KHAFormCell {
+class KHADateFormCell: KHAFormCell {
     
-    public override var date: NSDate? {
+    override var date: NSDate? {
         willSet {
             if let newValue = newValue {
                 detailTextLabel?.text = dateFotmatter.stringFromDate(newValue)
@@ -26,7 +26,7 @@ public class KHADateFormCell: KHAFormCell {
         dateFotmatter.timeStyle = .ShortStyle
     }
 
-    required public init(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

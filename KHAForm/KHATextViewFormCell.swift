@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class KHATextViewFormCell: KHAFormCell {
+class KHATextViewFormCell: KHAFormCell {
         
     private let kCellHeight: CGFloat = 144
     private let kFontSize: CGFloat = 16
@@ -56,7 +56,7 @@ public class KHATextViewFormCell: KHAFormCell {
         )
     }
 
-    required public init(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

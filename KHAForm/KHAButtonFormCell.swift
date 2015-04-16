@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class KHAButtonFormCell: KHAFormCell {
+class KHAButtonFormCell: KHAFormCell {
     
     private let kFontSize: CGFloat = 15
 
@@ -50,7 +50,7 @@ public class KHAButtonFormCell: KHAFormCell {
         )
     }
 
-    required public init(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
