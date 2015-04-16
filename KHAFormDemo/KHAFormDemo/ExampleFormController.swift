@@ -7,10 +7,13 @@
 //
 
 import UIKit
-import KHAForm
+import KHAForm // Import KHAForm
 
-class ExampleFormController: KHAFormController, KHAFormControllerDataSource { // Implement subclass of KHAForm
 
+// Inherit KHAFormController and adopt KHAFormControllerDataSource
+
+class ExampleFormController: KHAFormController, KHAFormControllerDataSource {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -20,7 +23,7 @@ class ExampleFormController: KHAFormController, KHAFormControllerDataSource { //
         // Dispose of any resources that can be recreated.
     }
 
-    // override a method to determine form structure
+    // Override a method to determine form structure
     override func formCellsInForm(form: KHAFormController) -> [[KHAFormCell]] {
         
         // setup cells
