@@ -1,5 +1,5 @@
 //
-//  ExampleFormTableViewController.swift
+//  ExampleFormController.swift
 //  KHAFormDemo
 //
 //  Created by Kohei Hayakawa on 4/5/15.
@@ -9,7 +9,7 @@
 import UIKit
 import KHAForm
 
-class ExampleFormTableViewController: KHAFormController, KHAFormControllerDataSource { // Implement subclass of KHAForm
+class ExampleFormController: KHAFormController, KHAFormControllerDataSource { // Implement subclass of KHAForm
 
     override func viewDidLoad() {
         super.viewDidLoad()
