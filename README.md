@@ -30,7 +30,7 @@ import KHAForm // Import KHAForm
 
 // Inherit KHAFormController and adopt KHAFormControllerDataSource
 
-class ExampleFormController: KHAFormController, KHAFormControllerDataSource {
+class ExampleFormController: KHAFormController, KHAFormDataSource {
 
     // Override a method to determine form structure
     override func formCellsInForm(form: KHAFormController) -> [[KHAFormCell]] {
