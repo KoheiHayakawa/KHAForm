@@ -14,8 +14,8 @@ pod 'KHAForm'
 ~~~
 
 ###Requirements
-* iOS 8.3
-* Xcode 6.3
+* iOS 8.0+
+* Xcode 6.3+
 * Swift 1.2
 
 ###Screen Shots
