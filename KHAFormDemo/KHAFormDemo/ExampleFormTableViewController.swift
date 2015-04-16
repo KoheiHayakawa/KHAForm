@@ -24,14 +24,14 @@ class ExampleFormTableViewController: KHAFormController { // Implement subclass 
     override func formCellsInForm(form: KHAFormController) -> [[KHAFormCell]] {
         
         // setup cells
-        let cell1 = KHAFormCell.formCellWithType(.TextField)        as! KHATextFieldFormCell
-        let cell2 = KHAFormCell.formCellWithType(.SegmentedControl) as! KHASegmentedControlFormCell
-        let cell3 = KHAFormCell.formCellWithType(.Switch)           as! KHASwitchFormCell
-        let cell4 = KHAFormCell.formCellWithType(.Date)             as! KHADateFormCell
-        let cell5 = KHAFormCell.formCellWithType(.Date)             as! KHADateFormCell
-        let cell6 = KHAFormCell.formCellWithType(.TextView)         as! KHATextViewFormCell
-        let cell7 = KHAFormCell.formCellWithType(.Button)           as! KHAButtonFormCell
-        let cell8 = KHAFormCell.formCellWithType(.Button)           as! KHAButtonFormCell
+        let cell1 = KHAFormCell.formCellWithType(.TextField)
+        let cell2 = KHAFormCell.formCellWithType(.SegmentedControl)
+        let cell3 = KHAFormCell.formCellWithType(.Switch)
+        let cell4 = KHAFormCell.formCellWithType(.Date)
+        let cell5 = KHAFormCell.formCellWithType(.Date)
+        let cell6 = KHAFormCell.formCellWithType(.TextView)
+        let cell7 = KHAFormCell.formCellWithType(.Button)
+        let cell8 = KHAFormCell.formCellWithType(.Button)
         let cell9 = KHAFormCell()   // we can use custom cell
         
         // settings for each cell
@@ -44,7 +44,7 @@ class ExampleFormTableViewController: KHAFormController { // Implement subclass 
         cell2.segmentedControl.insertSegmentWithTitle("Third", atIndex: 2, animated: false) // Add segment
         
         cell4.date = NSDate()
-        
+
         cell5.date = NSDate()
         
         cell6.textView.placeholder = "placeholder" // We can add placeholder on textview
@@ -68,17 +68,17 @@ class ExampleFormTableViewController: KHAFormController { // Implement subclass 
         println("delete")
         
         // We can access to the first cell contains text field...
-        let cell1 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 0)) as! KHATextFieldFormCell
+        let cell1 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 0))
         println(cell1.textField.text)
         
         // ...and second cell contains segmented controller, etc...
-        let cell2 = formCellForIndexPath(NSIndexPath(forRow: 1, inSection: 0)) as! KHASegmentedControlFormCell
+        let cell2 = formCellForIndexPath(NSIndexPath(forRow: 1, inSection: 0))
         println(cell2.segmentedControl.selectedSegmentIndex)
         
-        let cell3 = formCellForIndexPath(NSIndexPath(forRow: 2, inSection: 0)) as! KHASwitchFormCell
+        let cell3 = formCellForIndexPath(NSIndexPath(forRow: 2, inSection: 0))
         println(cell3.sswitch.on)
         
-        let cell4 = formCellForIndexPath(NSIndexPath(forItem: 0, inSection: 1)) as! KHADateFormCell
+        let cell4 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 1))
         println(cell4.date)
     }
     

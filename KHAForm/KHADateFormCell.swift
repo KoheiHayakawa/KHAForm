@@ -10,24 +10,18 @@ import UIKit
 
 public class KHADateFormCell: KHAFormCell {
     
-    public var date: NSDate? {
+    public override var date: NSDate? {
         willSet {
             if let newValue = newValue {
-                super.detailTextLabel?.text = dateFotmatter.stringFromDate(newValue)
+                detailTextLabel?.text = dateFotmatter.stringFromDate(newValue)
             }
         }
     }
     
-    private var dateFotmatter = NSDateFormatter()
-    
-    class var cellID: String {
-        return "KHADateCell"
-    }
-    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: .Value1, reuseIdentifier: reuseIdentifier)
-        super.textLabel?.text = "Label"
-        super.detailTextLabel?.text = "Date"
+        textLabel?.text = "Label"
+        detailTextLabel?.text = "Date"
         dateFotmatter.dateStyle = .ShortStyle
         dateFotmatter.timeStyle = .ShortStyle
     }

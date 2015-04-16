@@ -10,17 +10,11 @@ import UIKit
 
 public class KHASwitchFormCell: KHAFormCell {
 
-    public let sswitch: UISwitch = UISwitch()
-    
-    class var cellID: String {
-        return "KHASwitchCell"
-    }
-    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        super.selectionStyle = .None
-        super.textLabel?.text = "Label"
-        super.accessoryView = sswitch
+        selectionStyle = .None
+        textLabel?.text = "Label"
+        accessoryView = sswitch
     }
 
     required public init(coder aDecoder: NSCoder) {

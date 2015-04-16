@@ -10,23 +10,17 @@ import UIKit
 
 public class KHAButtonFormCell: KHAFormCell {
     
-    public let button: UIButton = UIButton()
-    
     private let kFontSize: CGFloat = 15
-    
-    class var cellID: String {
-        return "KHAButtonCell"
-    }
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        super.selectionStyle = .None
+        selectionStyle = .None
         
         button.setTitle("Button", forState: .Normal)
         button.titleLabel?.font = UIFont.systemFontOfSize(kFontSize)
         button.titleLabel?.textAlignment = .Center
         button.setTranslatesAutoresizingMaskIntoConstraints(false)
-        super.contentView.addSubview(button)
+        contentView.addSubview(button)
 
         contentView.addConstraints([
             NSLayoutConstraint(

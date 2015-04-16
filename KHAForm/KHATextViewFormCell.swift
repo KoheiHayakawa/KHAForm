@@ -9,25 +9,19 @@
 import UIKit
 
 public class KHATextViewFormCell: KHAFormCell {
-    
-    public let textView: UIPlaceholderTextView = UIPlaceholderTextView()
-    
+        
     private let kCellHeight: CGFloat = 144
     private let kFontSize: CGFloat = 16
     
-    class var cellID: String {
-        return "KHATextViewCell"
-    }
-    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        super.selectionStyle = .None
-        super.frame = CGRect(
-            x: super.frame.origin.x,
-            y: super.frame.origin.y,
-            width: super.frame.width,
+        selectionStyle = .None
+        frame = CGRect(
+            x: frame.origin.x,
+            y: frame.origin.y,
+            width: frame.width,
             height: kCellHeight)
-        super.contentView.addSubview(textView)
+        contentView.addSubview(textView)
         textView.font = UIFont.systemFontOfSize(kFontSize)
         textView.setTranslatesAutoresizingMaskIntoConstraints(false)
         

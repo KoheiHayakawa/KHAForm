@@ -38,7 +38,7 @@ class KHAFormController: UITableViewController, UITextFieldDelegate, UITextViewD
         return  cells
     }
 
-    public func formCellForIndexPath(indexPath: NSIndexPath) -> UITableViewCell {
+    public func formCellForIndexPath(indexPath: NSIndexPath) -> KHAFormCell {
         var before = false
         if hasInlineDatePicker() {
             before = (datePickerIndexPath?.row < indexPath.row) && (datePickerIndexPath?.section == indexPath.section)

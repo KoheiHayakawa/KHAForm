@@ -10,18 +10,13 @@ import UIKit
 
 public class KHATextFieldFormCell: KHAFormCell {
     
-    public let textField: UITextField = UITextField()
-    
-    class var cellID: String {
-        return "KHATextFieldCell"
-    }
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        super.selectionStyle = .None
+        selectionStyle = .None
 
         textField.setTranslatesAutoresizingMaskIntoConstraints(false)
-        super.contentView.addSubview(textField)
+        contentView.addSubview(textField)
         
         // TODO: Fix constant value of left and right. 
         // Current value is optimized for iPhone 6.

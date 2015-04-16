@@ -9,19 +9,13 @@
 import UIKit
 
 public class KHASegmentedControlFormCell: KHAFormCell {
-    
-    public var segmentedControl: UISegmentedControl = UISegmentedControl()
-    
-    class var cellID: String {
-        return "KHASegmentedControlCell"
-    }
-    
+        
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        super.selectionStyle = .None
-        super.textLabel?.text = "Label"
+        selectionStyle = .None
+        textLabel?.text = "Label"
         segmentedControl = UISegmentedControl(items: ["First", "Second"])
-        super.accessoryView = segmentedControl
+        accessoryView = segmentedControl
     }
 
     required public init(coder aDecoder: NSCoder) {

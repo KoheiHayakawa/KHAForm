@@ -9,23 +9,17 @@
 import UIKit
 
 public class KHADatePickerFormCell: KHAFormCell {
-    
-    public let datePicker: UIDatePicker = UIDatePicker()
-    
+        
     private let kCellHeight: CGFloat = 216
-    
-    class var cellID: String {
-        return "KHADatePickerCell"
-    }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        super.frame = CGRect(
-            x: super.frame.origin.x,
-            y: super.frame.origin.y,
-            width: super.frame.width,
+        frame = CGRect(
+            x: frame.origin.x,
+            y: frame.origin.y,
+            width: frame.width,
             height: kCellHeight)
-        super.contentView.addSubview(datePicker)
+        contentView.addSubview(datePicker)
     }
 
     required public init(coder aDecoder: NSCoder) {
