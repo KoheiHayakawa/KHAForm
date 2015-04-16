@@ -10,9 +10,9 @@ import UIKit
 import KHAForm // Import KHAForm
 
 
-// Inherit KHAFormController and adopt KHAFormControllerDataSource
+// Inherit KHAFormController and adopt KHAFormDataSource
 
-class ExampleFormController: KHAFormController, KHAFormControllerDataSource {
+class ExampleFormController: KHAFormController, KHAFormDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()

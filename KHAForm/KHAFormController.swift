@@ -8,12 +8,12 @@
 
 import UIKit
 
-public protocol KHAFormControllerDataSource {
+public protocol KHAFormDataSource {
      func formCellsInForm(form: KHAFormController) -> [[KHAFormCell]]
 }
 
 public
-class KHAFormController: UITableViewController, UITextFieldDelegate, UITextViewDelegate, KHAFormControllerDataSource {
+class KHAFormController: UITableViewController, UITextFieldDelegate, UITextViewDelegate, KHAFormDataSource {
     
     private var cells = [[KHAFormCell]]()
     private var datePickerIndexPath: NSIndexPath?
