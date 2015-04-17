@@ -30,6 +30,33 @@ public class KHAFormCell: UITableViewCell {
     public let textField: UITextField = UITextField()
     public let textView: UIPlaceholderTextView = UIPlaceholderTextView()
     
+    // MARK: How can I implement class cluster at init?
+    // The comment outed code below doesn't work.
+    
+//    public convenience init(type: KHAFormCellType) {
+//        self.init()
+//        
+//        var subClass: AnyClass
+//        switch type {
+//        case .TextField:
+//            subClass = KHATextFieldFormCell.self
+//        case .SegmentedControl:
+//            subClass = KHASegmentedControlFormCell.self
+//        case .Switch:
+//            subClass = KHASwitchFormCell.self
+//        case .Date:
+//            subClass = KHADateFormCell.self
+//        case .DatePicker:
+//            subClass = KHADatePickerFormCell.self
+//        case .TextView:
+//            subClass = KHATextViewFormCell.self
+//        case .Button:
+//            subClass = KHAButtonFormCell.self
+//        }
+//        object_setClass(self, subClass)
+//    }
+
+    
     public class func formCellWithType(type: KHAFormCellType) -> KHAFormCell {
         switch type {
         case .TextField:
