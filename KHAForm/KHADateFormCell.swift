@@ -10,6 +10,10 @@ import UIKit
 
 class KHADateFormCell: KHAFormCell {
     
+    class var cellID: String {
+        return "KHADateCell"
+    }
+    
     override var date: NSDate {
         willSet {
             detailTextLabel?.text = dateFotmatter.stringFromDate(newValue)

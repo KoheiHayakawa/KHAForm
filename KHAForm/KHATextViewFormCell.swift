@@ -9,7 +9,11 @@
 import UIKit
 
 class KHATextViewFormCell: KHAFormCell {
-        
+    
+    class var cellID: String {
+        return "KHATextViewCell"
+    }
+    
     private let kCellHeight: CGFloat = 144
     private let kFontSize: CGFloat = 16
     

@@ -9,7 +9,11 @@
 import UIKit
 
 class KHADatePickerFormCell: KHAFormCell {
-        
+    
+    class var cellID: String {
+        return "KHADatePickerCell"
+    }
+    
     private let kCellHeight: CGFloat = 216
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {

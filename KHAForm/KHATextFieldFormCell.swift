@@ -10,7 +10,10 @@ import UIKit
 
 class KHATextFieldFormCell: KHAFormCell {
     
-
+    class var cellID: String {
+        return "KHATextFieldCell"
+    }
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .None

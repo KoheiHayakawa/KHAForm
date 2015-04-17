@@ -10,6 +10,10 @@ import UIKit
 
 class KHASwitchFormCell: KHAFormCell {
 
+    class var cellID: String {
+        return "KHASwitchCell"
+    }
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .None

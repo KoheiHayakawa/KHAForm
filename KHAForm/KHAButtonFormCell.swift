@@ -10,8 +10,12 @@ import UIKit
 
 class KHAButtonFormCell: KHAFormCell {
     
+    class var cellID: String {
+        return "KHAButtonCell"
+    }
+    
     private let kFontSize: CGFloat = 15
-
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .None

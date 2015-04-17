@@ -27,14 +27,14 @@ class ExampleFormController: KHAFormController, KHAFormDataSource {
     override func formCellsInForm(form: KHAFormController) -> [[KHAFormCell]] {
         
         // setup cells
-        let cell1 = KHAFormCell.formCellWithType(.TextField)
-        let cell2 = KHAFormCell.formCellWithType(.SegmentedControl)
-        let cell3 = KHAFormCell.formCellWithType(.Switch)
-        let cell4 = KHAFormCell.formCellWithType(.Date)
-        let cell5 = KHAFormCell.formCellWithType(.Date)
-        let cell6 = KHAFormCell.formCellWithType(.TextView)
-        let cell7 = KHAFormCell.formCellWithType(.Button)
-        let cell8 = KHAFormCell.formCellWithType(.Button)
+        let cell1 = KHAFormCell.formCellWithType(.TextField) // We can init form cell with type.
+        let cell2 = dequeueReusableFormCellWithType(.SegmentedControl) // But it's better to dequeue.
+        let cell3 = dequeueReusableFormCellWithType(.Switch)
+        let cell4 = dequeueReusableFormCellWithType(.Date)
+        let cell5 = dequeueReusableFormCellWithType(.Date)
+        let cell6 = dequeueReusableFormCellWithType(.TextView)
+        let cell7 = dequeueReusableFormCellWithType(.Button)
+        let cell8 = dequeueReusableFormCellWithType(.Button)
         let cell9 = KHAFormCell()   // we can use custom cell
         
         // settings for each cell

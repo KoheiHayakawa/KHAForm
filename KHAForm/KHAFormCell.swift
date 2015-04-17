@@ -17,6 +17,30 @@ public enum KHAFormCellType {
     case DatePicker
     case TextView
     case Button
+    
+    func cellID() -> String {
+        switch self {
+        case .TextField:        return KHATextFieldFormCell.cellID
+        case .SegmentedControl: return KHASegmentedControlFormCell.cellID
+        case .Switch:           return KHASwitchFormCell.cellID
+        case .Date:             return KHADateFormCell.cellID
+        case .DatePicker:       return KHADatePickerFormCell.cellID
+        case .TextView:         return KHATextViewFormCell.cellID
+        case .Button:           return KHAButtonFormCell.cellID
+        }
+    }
+    
+    func cellClass() -> AnyClass {
+        switch self {
+        case .TextField:        return KHATextFieldFormCell.self
+        case .SegmentedControl: return KHASegmentedControlFormCell.self
+        case .Switch:           return KHASwitchFormCell.self
+        case .Date:             return KHADateFormCell.self
+        case .DatePicker:       return KHADatePickerFormCell.self
+        case .TextView:         return KHATextViewFormCell.self
+        case .Button:           return KHAButtonFormCell.self
+        }
+    }
 }
 
 public class KHAFormCell: UITableViewCell {

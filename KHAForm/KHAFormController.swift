@@ -45,13 +45,26 @@ class KHAFormController: UITableViewController, UITextFieldDelegate, UITextViewD
         }
         let row = (before ? indexPath.row - 1 : indexPath.row)
 
-        var cell = KHAFormCell.formCellWithType(.DatePicker)
+        var cell = dequeueReusableFormCellWithType(.DatePicker)
         if !hasPickerAtIndexPath(indexPath) {
             cell = cells[indexPath.section][row]
         }
         return cell
     }
     
+    public func dequeueReusableFormCellWithType(type: KHAFormCellType) -> KHAFormCell {
+        // Register the picker cell if form has a date cell and still not registered
+        if type == .Date && tableView.dequeueReusableCellWithIdentifier(type.cellID()) == nil {
+            tableView.registerClass(KHADatePickerFormCell.self, forCellReuseIdentifier: KHADatePickerFormCell.cellID)
+        }
+        // Register initialized cell if form doesn't have that cell
+        if let cell = tableView.dequeueReusableCellWithIdentifier(type.cellID()) as? KHAFormCell {
+            return cell
+        } else {
+            tableView.registerClass(type.cellClass(), forCellReuseIdentifier: type.cellID())
+            return tableView.dequeueReusableCellWithIdentifier(type.cellID()) as! KHAFormCell
+        }
+    }
 
     // MARK: - UITableViewDataSource
     

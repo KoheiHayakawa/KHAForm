@@ -9,7 +9,11 @@
 import UIKit
 
 class KHASegmentedControlFormCell: KHAFormCell {
-        
+    
+    class var cellID: String {
+        return "KHASegmentedControlCell"
+    }
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .None
