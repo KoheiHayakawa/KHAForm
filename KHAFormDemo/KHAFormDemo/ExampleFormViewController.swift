@@ -10,7 +10,7 @@ import UIKit
 import KHAForm // Import KHAForm
 
 
-// Inherit KHAFormController and adopt KHAFormDataSource
+// Inherit KHAFormViewController and adopt KHAFormViewDataSource
 
 class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
     
