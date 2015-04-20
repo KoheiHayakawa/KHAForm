@@ -28,12 +28,12 @@ import UIKit
 import KHAForm // Import KHAForm
 
 
-// Inherit KHAFormController and adopt KHAFormControllerDataSource
+// Inherit KHAFormViewController and adopt KHAFormViewDataSource
 
-class ExampleFormController: KHAFormController, KHAFormDataSource {
+class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
 
     // Override a method to determine form structure
-    override func formCellsInForm(form: KHAFormController) -> [[KHAFormCell]] {
+    override func formCellsInForm(form: KHAFormViewController) -> [[KHAFormCell]] {
     
         // setup cells
         let cell1 = KHAFormCell.formCellWithType(.TextField) // We can init form cell with type.
