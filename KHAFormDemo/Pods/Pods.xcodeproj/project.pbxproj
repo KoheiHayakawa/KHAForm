@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C4AD0BDA1336DE0053DC4A3 /* KHAFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162ED7C8414C1590E6CBACD1 /* KHAFormController.swift */; };
+		2C4AD0BDA1336DE0053DC4A3 /* KHAFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162ED7C8414C1590E6CBACD1 /* KHAFormViewController.swift */; };
 		3B7D5EE32C9E55A3E9B4441D /* KHADatePickerFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303131A6E3C3E8E9AD6A8E08 /* KHADatePickerFormCell.swift */; };
 		40E44EED56DBA585AF1796DA /* KHAFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFC76B166274D661CF0BA /* KHAFormCell.swift */; };
 		4A5D0F7781F2CA93D0C13FAC /* KHASegmentedControlFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3585DF78A86ECD4786E66B2D /* KHASegmentedControlFormCell.swift */; };
@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		0F1CD1757202965F2A7D7A7F /* KHAButtonFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHAButtonFormCell.swift; sourceTree = "<group>"; };
-		162ED7C8414C1590E6CBACD1 /* KHAFormController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHAFormController.swift; sourceTree = "<group>"; };
+		162ED7C8414C1590E6CBACD1 /* KHAFormViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHAFormViewController.swift; sourceTree = "<group>"; };
 		198952B6C3215F594E5983B9 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
 		2B735EE8456208E556AE87FD /* Pods-KHAForm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KHAForm.modulemap"; sourceTree = "<group>"; };
 		303131A6E3C3E8E9AD6A8E08 /* KHADatePickerFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHADatePickerFormCell.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 				EF96FB1C3D8D076B085115D4 /* KHADateFormCell.swift */,
 				303131A6E3C3E8E9AD6A8E08 /* KHADatePickerFormCell.swift */,
 				FF9BFC76B166274D661CF0BA /* KHAFormCell.swift */,
-				162ED7C8414C1590E6CBACD1 /* KHAFormController.swift */,
+				162ED7C8414C1590E6CBACD1 /* KHAFormViewController.swift */,
 				3585DF78A86ECD4786E66B2D /* KHASegmentedControlFormCell.swift */,
 				EF360BFAF5023CE25053DAB7 /* KHASwitchFormCell.swift */,
 				43FCBD8B71ECB7B24DDB9584 /* KHATextFieldFormCell.swift */,
@@ -292,7 +292,7 @@
 				B98236BE61D868F8F7D6FBA2 /* KHADateFormCell.swift in Sources */,
 				3B7D5EE32C9E55A3E9B4441D /* KHADatePickerFormCell.swift in Sources */,
 				40E44EED56DBA585AF1796DA /* KHAFormCell.swift in Sources */,
-				2C4AD0BDA1336DE0053DC4A3 /* KHAFormController.swift in Sources */,
+				2C4AD0BDA1336DE0053DC4A3 /* KHAFormViewController.swift in Sources */,
 				4A5D0F7781F2CA93D0C13FAC /* KHASegmentedControlFormCell.swift in Sources */,
 				6E91C11B6F83A950FEDE34BB /* KHASwitchFormCell.swift in Sources */,
 				7AC1500323467DD09D192847 /* KHATextFieldFormCell.swift in Sources */,

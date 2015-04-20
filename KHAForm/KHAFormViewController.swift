@@ -8,12 +8,12 @@
 
 import UIKit
 
-public protocol KHAFormDataSource {
-     func formCellsInForm(form: KHAFormController) -> [[KHAFormCell]]
+public protocol KHAFormViewDataSource {
+     func formCellsInForm(form: KHAFormViewController) -> [[KHAFormCell]]
 }
 
 public
-class KHAFormController: UITableViewController, UITextFieldDelegate, UITextViewDelegate, KHAFormDataSource {
+class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextViewDelegate, KHAFormViewDataSource {
     
     private var cells = [[KHAFormCell]]()
     private var datePickerIndexPath: NSIndexPath?
@@ -34,7 +34,7 @@ class KHAFormController: UITableViewController, UITextFieldDelegate, UITextViewD
         First index determines section and second index determines row.
         This method must be overridden in subclass.
     */
-    public func formCellsInForm(form: KHAFormController) -> [[KHAFormCell]] {
+    public func formCellsInForm(form: KHAFormViewController) -> [[KHAFormCell]] {
         return  cells
     }
 

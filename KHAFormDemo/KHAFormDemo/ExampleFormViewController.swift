@@ -12,7 +12,7 @@ import KHAForm // Import KHAForm
 
 // Inherit KHAFormController and adopt KHAFormDataSource
 
-class ExampleFormController: KHAFormController, KHAFormDataSource {
+class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,7 @@ class ExampleFormController: KHAFormController, KHAFormDataSource {
     }
 
     // Override a method to determine form structure
-    override func formCellsInForm(form: KHAFormController) -> [[KHAFormCell]] {
+    override func formCellsInForm(form: KHAFormViewController) -> [[KHAFormCell]] {
         
         // setup cells
         let cell1 = KHAFormCell.formCellWithType(.TextField) // We can init form cell with type.
