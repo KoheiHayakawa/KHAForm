@@ -195,6 +195,9 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
             datePickerIndexPath = NSIndexPath(forRow: indexPathToReveal.row + 1, inSection: indexPath.section)
         }
         
+        // always deselect the row containing the start or end date
+        tableView.deselectRowAtIndexPath(indexPath, animated:true)
+        
         tableView.endUpdates()
         
         // inform our date picker of the current date to match the current cell

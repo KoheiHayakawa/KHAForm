@@ -91,6 +91,9 @@ class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
         
         let cell4 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 1))
         println(cell4.date)
+        
+        let cell6 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 2))
+        println(cell6.selections[cell6.selectedIndex])
     }
     
     func didPressedCancelButton(sender: UIButton) {
