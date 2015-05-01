@@ -17,6 +17,7 @@ public enum KHAFormCellType {
     case DatePicker
     case TextView
     case Button
+    case Selection
     
     func cellID() -> String {
         switch self {
@@ -27,6 +28,7 @@ public enum KHAFormCellType {
         case .DatePicker:       return KHADatePickerFormCell.cellID
         case .TextView:         return KHATextViewFormCell.cellID
         case .Button:           return KHAButtonFormCell.cellID
+        case .Selection:        return KHASelectionFormCell.cellID
         }
     }
     
@@ -39,6 +41,7 @@ public enum KHAFormCellType {
         case .DatePicker:       return KHADatePickerFormCell.self
         case .TextView:         return KHATextViewFormCell.self
         case .Button:           return KHAButtonFormCell.self
+        case .Selection:        return KHASelectionFormCell.self
         }
     }
 }
@@ -97,6 +100,8 @@ public class KHAFormCell: UITableViewCell {
             return KHATextViewFormCell()
         case .Button:
             return KHAButtonFormCell()
+        case .Selection:
+            return KHASelectionFormCell()
         }
     }
 }

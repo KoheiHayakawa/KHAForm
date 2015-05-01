@@ -12,6 +12,7 @@
 		40E44EED56DBA585AF1796DA /* KHAFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFC76B166274D661CF0BA /* KHAFormCell.swift */; };
 		4A5D0F7781F2CA93D0C13FAC /* KHASegmentedControlFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3585DF78A86ECD4786E66B2D /* KHASegmentedControlFormCell.swift */; };
 		4DDDFA14B0F361F5F791772A /* Pods-KHAForm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE24396F554D0C686AF1E432 /* Pods-KHAForm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		555E82251AF346D5008326F1 /* KHASelectionFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555E82241AF346D5008326F1 /* KHASelectionFormCell.swift */; };
 		5DBDC0461644439931A13CBC /* Pods-KHAForm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAE5E8300C6D322D6BB7854 /* Pods-KHAForm-dummy.m */; };
 		6A11124C0A657B4F6D9FD0D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81E17AFD0E1A1C3021A3454 /* Foundation.framework */; };
 		6E91C11B6F83A950FEDE34BB /* KHASwitchFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF360BFAF5023CE25053DAB7 /* KHASwitchFormCell.swift */; };
@@ -46,6 +47,7 @@
 		43FCBD8B71ECB7B24DDB9584 /* KHATextFieldFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHATextFieldFormCell.swift; sourceTree = "<group>"; };
 		527530A159A4AE6F13C37280 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		551DC6435008108A94A0F52A /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		555E82241AF346D5008326F1 /* KHASelectionFormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KHASelectionFormCell.swift; sourceTree = "<group>"; };
 		56B0DA9BF4D4D919E2B0F652 /* Pods-KHAForm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KHAForm-prefix.pch"; sourceTree = "<group>"; };
 		66E1BE6AF60FF2D1323CC16E /* Pods-KHAForm-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KHAForm-Private.xcconfig"; sourceTree = "<group>"; };
 		7F3D3B0C381A185A72C9EF9A /* KHATextViewFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHATextViewFormCell.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				EF360BFAF5023CE25053DAB7 /* KHASwitchFormCell.swift */,
 				43FCBD8B71ECB7B24DDB9584 /* KHATextFieldFormCell.swift */,
 				7F3D3B0C381A185A72C9EF9A /* KHATextViewFormCell.swift */,
+				555E82241AF346D5008326F1 /* KHASelectionFormCell.swift */,
 			);
 			path = KHAForm;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28DD41965FD61F9EE2ED9ED /* KHAButtonFormCell.swift in Sources */,
+				555E82251AF346D5008326F1 /* KHASelectionFormCell.swift in Sources */,
 				B98236BE61D868F8F7D6FBA2 /* KHADateFormCell.swift in Sources */,
 				3B7D5EE32C9E55A3E9B4441D /* KHADatePickerFormCell.swift in Sources */,
 				40E44EED56DBA585AF1796DA /* KHAFormCell.swift in Sources */,
@@ -419,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A19ED52F0B58F0472BBF756E /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -483,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9D3FE4C1A5FF3DCDD3BC7F0 /* Pods.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

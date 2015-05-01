@@ -32,10 +32,11 @@ class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
         let cell3 = dequeueReusableFormCellWithType(.Switch)
         let cell4 = dequeueReusableFormCellWithType(.Date)
         let cell5 = dequeueReusableFormCellWithType(.Date)
-        let cell6 = dequeueReusableFormCellWithType(.TextView)
-        let cell7 = dequeueReusableFormCellWithType(.Button)
+        let cell6 = dequeueReusableFormCellWithType(.Selection)
+        let cell7 = dequeueReusableFormCellWithType(.TextView)
         let cell8 = dequeueReusableFormCellWithType(.Button)
-        let cell9 = KHAFormCell()   // we can use custom cell
+        let cell9 = dequeueReusableFormCellWithType(.Button)
+        let cell10 = KHAFormCell()   // we can use custom cell
         
         // settings for each cell
         cell1.textField.text = "Title"
@@ -50,21 +51,21 @@ class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
 
         cell5.date = NSDate()
         
-        cell6.textView.placeholder = "placeholder" // We can add placeholder on textview
+        cell7.textView.placeholder = "placeholder" // We can add placeholder on textview
         
-        cell7.button.setTitle("Delete", forState: .Normal)
-        cell7.button.setTitleColor(UIColor.redColor(), forState: .Normal)
-        cell7.button.addTarget(self, action: Selector("didPressedDeleteButton:"), forControlEvents: UIControlEvents.TouchUpInside)
+        cell8.button.setTitle("Delete", forState: .Normal)
+        cell8.button.setTitleColor(UIColor.redColor(), forState: .Normal)
+        cell8.button.addTarget(self, action: Selector("didPressedDeleteButton:"), forControlEvents: UIControlEvents.TouchUpInside)
         
-        cell8.button.setTitle("Cancel", forState: .Normal)
-        cell8.button.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
-        cell8.button.addTarget(self, action: Selector("didPressedCancelButton:"), forControlEvents: UIControlEvents.TouchUpInside)
+        cell9.button.setTitle("Cancel", forState: .Normal)
+        cell9.button.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
+        cell9.button.addTarget(self, action: Selector("didPressedCancelButton:"), forControlEvents: UIControlEvents.TouchUpInside)
         
-        cell9.textLabel?.text = "custom cell"
+        cell10.textLabel?.text = "custom cell"
         
         // Form structure is determined by using two-dimensional array.
         // First index determines section and second index determines row.
-        return [[cell1, cell2, cell3], [cell4, cell5], [cell6], [cell7, cell8], [cell9]]
+        return [[cell1, cell2, cell3], [cell4, cell5], [cell6], [cell7], [cell8, cell9], [cell10]]
     }
     
     func didPressedDeleteButton(sender: UIButton) {
