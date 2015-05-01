@@ -13,10 +13,11 @@ public protocol KHAFormViewDataSource {
 }
 
 public
-class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextViewDelegate, KHAFormViewDataSource {
+class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextViewDelegate, KHAFormViewDataSource, KHASelectionFormViewDelegate {
     
     private var cells = [[KHAFormCell]]()
     private var datePickerIndexPath: NSIndexPath?
+    private var lastIndexPath: NSIndexPath? // For selection form cell
     
     // Form is always grouped tableview
     convenience public init() {
@@ -105,13 +106,19 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
     
     override public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! KHAFormCell
 
         if cell is KHADateFormCell {
             displayInlineDatePickerForRowAtIndexPath(indexPath)
-        } else {
-            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        } else if cell is KHASelectionFormCell {
+            lastIndexPath = indexPath
+            let viewController = KHASelectionFormViewController()
+            viewController.selections = cell.selections
+            viewController.selectedIndex = cell.selectedIndex
+            viewController.delegate = self
+            navigationController?.pushViewController(viewController, animated: true)
         }
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
         view.endEditing(true)
     }
     
@@ -188,9 +195,6 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
             datePickerIndexPath = NSIndexPath(forRow: indexPathToReveal.row + 1, inSection: indexPath.section)
         }
         
-        // always deselect the row containing the start or end date
-        tableView.deselectRowAtIndexPath(indexPath, animated:true)
-        
         tableView.endUpdates()
         
         // inform our date picker of the current date to match the current cell
@@ -250,5 +254,10 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
 
     public func textViewDidBeginEditing(textView: UITextView) {
         removeAnyDatePickerCell()
+    }
+    
+    func selectionFormDidChangeSelectedIndex(selectionForm: KHASelectionFormViewController) {
+        let cell = tableView.cellForRowAtIndexPath(lastIndexPath!) as! KHASelectionFormCell
+        cell.selectedIndex = selectionForm.selectedIndex
     }
 }
