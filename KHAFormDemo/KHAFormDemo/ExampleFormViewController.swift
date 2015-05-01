@@ -48,13 +48,17 @@ class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
         cell2.segmentedControl.setTitle("Second", forSegmentAtIndex: 1)
         cell2.segmentedControl.insertSegmentWithTitle("Third", atIndex: 2, animated: false) // Add segment
         
+        cell4.textLabel?.text = "Start"
         cell4.date = NSDate()
 
+        cell5.textLabel?.text = "End"
         cell5.date = NSDate()
         
+        cell6.textLabel?.text = "Fruits"
         cell6.selections = ["None", "Apple", "Grape", "Orange"] // We must init selection list
         cell6.selectedIndex = 1 // We must assign initial selected value
         
+        cell7.textLabel?.text = "iPhone"
         cell7.selections = ["iPhone 6", "iPhone 6 Plus", "iPhone 5s"]
         cell7.selectedIndex = 0
         

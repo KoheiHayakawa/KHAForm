@@ -113,6 +113,7 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
         } else if cell is KHASelectionFormCell {
             lastIndexPath = indexPath
             let viewController = KHASelectionFormViewController()
+            viewController.title = cell.textLabel?.text
             viewController.selections = cell.selections
             viewController.selectedIndex = cell.selectedIndex
             viewController.delegate = self
