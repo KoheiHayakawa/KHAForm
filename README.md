@@ -18,9 +18,12 @@ pod 'KHAForm'
 * Xcode 6.3+
 * Swift 1.2
 
-###Screen Shots
-<img alt="Screen Shot 01" src="https://raw.githubusercontent.com/wiki/KoheiHayakawa/Form/images/screen_shot_01.png" width="200"/>
-<img alt="Screen Shot 02" src="https://raw.githubusercontent.com/wiki/KoheiHayakawa/Form/images/screen_shot_02.png" width="200"/>
+###Interface
+<img alt="demo" src="https://raw.githubusercontent.com/wiki/KoheiHayakawa/KHAForm/images/demo.gif" width="200"/>
+
+<img alt="Screen Shot 01" src="https://raw.githubusercontent.com/wiki/KoheiHayakawa/KHAForm/images/screen_shot_01.png" width="200"/>
+<img alt="Screen Shot 02" src="https://raw.githubusercontent.com/wiki/KoheiHayakawa/KHAForm/images/screen_shot_02.png" width="200"/>
+<img alt="Screen Shot 03" src="https://raw.githubusercontent.com/wiki/KoheiHayakawa/KHAForm/images/screen_shot_03.png" width="200"/>
 
 ###Usage
 ```swift
@@ -31,20 +34,22 @@ import KHAForm // Import KHAForm
 // Inherit KHAFormViewController and adopt KHAFormViewDataSource
 
 class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
-
+    
     // Override a method to determine form structure
     override func formCellsInForm(form: KHAFormViewController) -> [[KHAFormCell]] {
-    
+        
         // setup cells
         let cell1 = KHAFormCell.formCellWithType(.TextField) // We can init form cell with type.
         let cell2 = dequeueReusableFormCellWithType(.SegmentedControl) // But it's better to dequeue.
         let cell3 = dequeueReusableFormCellWithType(.Switch)
         let cell4 = dequeueReusableFormCellWithType(.Date)
         let cell5 = dequeueReusableFormCellWithType(.Date)
-        let cell6 = dequeueReusableFormCellWithType(.TextView)
-        let cell7 = dequeueReusableFormCellWithType(.Button)
-        let cell8 = dequeueReusableFormCellWithType(.Button)
-        let cell9 = KHAFormCell()   // we can use custom cell        
+        let cell6 = dequeueReusableFormCellWithType(.Selection)
+        let cell7 = dequeueReusableFormCellWithType(.Selection)
+        let cell8 = dequeueReusableFormCellWithType(.TextView)
+        let cell9 = dequeueReusableFormCellWithType(.Button)
+        let cell10 = dequeueReusableFormCellWithType(.Button)
+        let cell11 = KHAFormCell()   // we can use custom cell
         
         // settings for each cell
         cell1.textField.text = "Title"
@@ -55,25 +60,35 @@ class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
         cell2.segmentedControl.setTitle("Second", forSegmentAtIndex: 1)
         cell2.segmentedControl.insertSegmentWithTitle("Third", atIndex: 2, animated: false) // Add segment
         
+        cell4.textLabel?.text = "Start"
         cell4.date = NSDate()
 
+        cell5.textLabel?.text = "End"
         cell5.date = NSDate()
         
-        cell6.textView.placeholder = "placeholder" // We can add placeholder on textview
+        cell6.textLabel?.text = "Fruits"
+        cell6.selections = ["None", "Apple", "Grape", "Orange"] // We must init selection list
+        cell6.selectedIndex = 1 // We must assign initial selected value
         
-        cell7.button.setTitle("Delete", forState: .Normal)
-        cell7.button.setTitleColor(UIColor.redColor(), forState: .Normal)
-        cell7.button.addTarget(self, action: Selector("didPressedDeleteButton:"), forControlEvents: UIControlEvents.TouchUpInside)
+        cell7.textLabel?.text = "iPhone"
+        cell7.selections = ["iPhone 6", "iPhone 6 Plus", "iPhone 5s"]
+        cell7.selectedIndex = 0
         
-        cell8.button.setTitle("Cancel", forState: .Normal)
-        cell8.button.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
-        cell8.button.addTarget(self, action: Selector("didPressedCancelButton:"), forControlEvents: UIControlEvents.TouchUpInside)
+        cell8.textView.placeholder = "placeholder" // We can add placeholder on textview
         
-        cell9.textLabel?.text = "custom cell"
+        cell9.button.setTitle("Delete", forState: .Normal)
+        cell9.button.setTitleColor(UIColor.redColor(), forState: .Normal)
+        cell9.button.addTarget(self, action: Selector("didPressedDeleteButton:"), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        cell10.button.setTitle("Cancel", forState: .Normal)
+        cell10.button.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
+        cell10.button.addTarget(self, action: Selector("didPressedCancelButton:"), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        cell11.textLabel?.text = "custom cell"
         
         // Form structure is determined by using two-dimensional array.
         // First index determines section and second index determines row.
-        return [[cell1, cell2, cell3], [cell4, cell5], [cell6], [cell7, cell8], [cell9]]
+        return [[cell1, cell2, cell3], [cell4, cell5], [cell6, cell7], [cell8], [cell9, cell10], [cell11]]
     }
     
     func didPressedDeleteButton(sender: UIButton) {
@@ -92,6 +107,9 @@ class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
         
         let cell4 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 1))
         println(cell4.date)
+        
+        let cell6 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 2))
+        println(cell6.selections[cell6.selectedIndex])
     }
     
     func didPressedCancelButton(sender: UIButton) {
