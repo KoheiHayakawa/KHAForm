@@ -16,7 +16,7 @@ class KHADateFormCell: KHAFormCell {
     
     override var date: NSDate {
         willSet {
-            detailTextLabel?.text = dateFotmatter.stringFromDate(newValue)
+            detailTextLabel?.text = dateFormatter.stringFromDate(newValue)
         }
     }
     
@@ -24,8 +24,8 @@ class KHADateFormCell: KHAFormCell {
         super.init(style: .Value1, reuseIdentifier: reuseIdentifier)
         textLabel?.text = "Label"
         detailTextLabel?.text = "Date"
-        dateFotmatter.dateStyle = .ShortStyle
-        dateFotmatter.timeStyle = .ShortStyle
+        dateFormatter.dateStyle = .ShortStyle
+        dateFormatter.timeStyle = .ShortStyle
     }
 
     required init(coder aDecoder: NSCoder) {
