@@ -51,6 +51,7 @@ public class KHAFormCell: UITableViewCell {
     public let button: UIButton = UIButton()
     public var date: NSDate = NSDate()
     public var dateFormatter = NSDateFormatter()
+    public var datePickerMode = UIDatePickerMode.DateAndTime
     public let datePicker: UIDatePicker = UIDatePicker()
     public var segmentedControl: UISegmentedControl = UISegmentedControl()
     public let sswitch: UISwitch = UISwitch()

@@ -26,6 +26,7 @@ class KHADateFormCell: KHAFormCell {
         detailTextLabel?.text = "Date"
         dateFormatter.dateStyle = .ShortStyle
         dateFormatter.timeStyle = .ShortStyle
+        datePickerMode = .DateAndTime
     }
 
     required init(coder aDecoder: NSCoder) {

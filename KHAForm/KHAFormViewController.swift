@@ -92,11 +92,13 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
         var cell = formCellForIndexPath(indexPath)
         
         if cell is KHATextFieldFormCell {
-            (cell as! KHATextFieldFormCell).textField.delegate = self
+            cell.textField.delegate = self
         } else if cell is KHATextViewFormCell {
-            (cell as! KHATextViewFormCell).textView.delegate = self
+            cell.textView.delegate = self
         } else if cell is KHADatePickerFormCell {
-            (cell as! KHADatePickerFormCell).datePicker.addTarget(self, action: Selector("didDatePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+            let dateCell = formCellForIndexPath(NSIndexPath(forRow: indexPath.row-1, inSection: indexPath.section))
+            cell.datePicker.datePickerMode = dateCell.datePickerMode
+            cell.datePicker.addTarget(self, action: Selector("didDatePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
         }
         return cell
     }
