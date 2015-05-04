@@ -30,6 +30,10 @@ class KHASelectionFormViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        tableView.reloadData()
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: self.selectedIndex, inSection: 0), atScrollPosition: .Top, animated: false)
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,6 +54,8 @@ class KHASelectionFormViewController: UITableViewController {
         
         if selectedIndex == indexPath.row {
             cell.accessoryType = .Checkmark
+        } else {
+            cell.accessoryType = .None
         }
         
         return cell
