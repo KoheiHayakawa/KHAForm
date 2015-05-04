@@ -65,7 +65,7 @@ class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
         
         cell7.textLabel?.text = "iPhone"
         cell7.selections = ["iPhone 6", "iPhone 6 Plus", "iPhone 5s"]
-        cell7.selectedIndex = 0
+        //cell7.selectedIndex = 0
         
         cell8.textView.placeholder = "placeholder" // We can add placeholder on textview
         

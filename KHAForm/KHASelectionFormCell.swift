@@ -24,7 +24,7 @@ class KHASelectionFormCell: KHAFormCell {
         super.init(style: .Value1, reuseIdentifier: reuseIdentifier)
 
         textLabel?.text = "Label"
-        detailTextLabel?.text = "Selected"
+        detailTextLabel?.text = "None"
         accessoryType = .DisclosureIndicator
     }
     
