@@ -64,6 +64,11 @@ class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
         cell4.date = NSDate()
 
         cell5.textLabel?.text = "End"
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .LongStyle
+        dateFormatter.timeStyle = .NoStyle
+        cell5.dateFormatter = dateFormatter // We can change date format
+        cell5.datePickerMode = .Date        // and picker mode
         cell5.date = NSDate()
         
         cell6.textLabel?.text = "Fruits"
