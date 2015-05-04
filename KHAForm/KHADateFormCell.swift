@@ -20,6 +20,12 @@ class KHADateFormCell: KHAFormCell {
         }
     }
     
+    override var dateFormatter: NSDateFormatter {
+        willSet {
+            detailTextLabel?.text = newValue.stringFromDate(date)
+        }
+    }
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: .Value1, reuseIdentifier: reuseIdentifier)
         textLabel?.text = "Label"
@@ -32,4 +38,6 @@ class KHADateFormCell: KHAFormCell {
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
 }
