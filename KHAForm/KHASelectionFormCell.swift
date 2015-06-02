@@ -14,9 +14,9 @@ class KHASelectionFormCell: KHAFormCell {
         return "KHASelectionCell"
     }
     
-    override var selectedIndex: Int {
+    override var selectionFormViewController: KHASelectionFormViewController {
         willSet {
-            detailTextLabel?.text = selections[newValue]
+            detailTextLabel?.text = newValue.selections[newValue.selectedIndex]
         }
     }
     

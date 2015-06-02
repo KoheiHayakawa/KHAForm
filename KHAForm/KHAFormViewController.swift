@@ -114,12 +114,9 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
             displayInlineDatePickerForRowAtIndexPath(indexPath)
         } else if cell is KHASelectionFormCell {
             lastIndexPath = indexPath
-            let viewController = KHASelectionFormViewController()
-            viewController.title = cell.textLabel?.text
-            viewController.selections = cell.selections
-            viewController.selectedIndex = cell.selectedIndex
-            viewController.delegate = self
-            navigationController?.pushViewController(viewController, animated: true)
+            let selectionFormViewController = cell.selectionFormViewController
+            selectionFormViewController.delegate = self
+            navigationController?.pushViewController(selectionFormViewController, animated: true)
         }
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         view.endEditing(true)
@@ -264,6 +261,6 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
     
     func selectionFormDidChangeSelectedIndex(selectionForm: KHASelectionFormViewController) {
         let cell = tableView.cellForRowAtIndexPath(lastIndexPath!) as! KHASelectionFormCell
-        cell.selectedIndex = selectionForm.selectedIndex
+        cell.detailTextLabel?.text = selectionForm.selections[selectionForm.selectedIndex]
     }
 }

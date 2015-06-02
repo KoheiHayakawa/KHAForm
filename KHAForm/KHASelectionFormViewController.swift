@@ -12,11 +12,16 @@ protocol KHASelectionFormViewDelegate: class {
     func selectionFormDidChangeSelectedIndex(selectionForm: KHASelectionFormViewController)
 }
 
-class KHASelectionFormViewController: UITableViewController {
+public protocol KHASelectionFormViewDataSource {
+    func selectionsForSelectionForm(selectionForm: KHASelectionFormViewController) -> [String]
+    func selectedIndexForSelectionForm(selectionForm: KHASelectionFormViewController) -> Int
+}
+
+public class KHASelectionFormViewController: UITableViewController, KHASelectionFormViewDataSource {
 
     private let cellID = "cell"
-    var selections: [String] = []
-    var selectedIndex: Int = 0
+    public var selections: [String] = []
+    public var selectedIndex: Int = 0
     weak var delegate: KHASelectionFormViewDelegate?
 
     
@@ -25,9 +30,11 @@ class KHASelectionFormViewController: UITableViewController {
     // Form is always grouped tableview
     convenience init() {
         self.init(style: .Grouped)
+        selections = selectionsForSelectionForm(self)
+        selectedIndex = selectedIndexForSelectionForm(self)
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellID)
         tableView.reloadData()
@@ -36,18 +43,26 @@ class KHASelectionFormViewController: UITableViewController {
         })
     }
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    public func selectionsForSelectionForm(selectionForm: KHASelectionFormViewController) -> [String] {
+        return selections
+    }
+    
+    public func selectedIndexForSelectionForm(selectionForm: KHASelectionFormViewController) -> Int {
+        return selectedIndex
     }
 
     
     // MARK: - Table view data source
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    override public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return selections.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) as! UITableViewCell
         
         cell.textLabel?.text = selections[indexPath.row]
@@ -61,7 +76,7 @@ class KHASelectionFormViewController: UITableViewController {
         return cell
     }
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         // Remove checkmark from old selected cell
         let oldSelectedCell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: selectedIndex, inSection: 0))

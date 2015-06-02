@@ -60,12 +60,15 @@ class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
         cell5.date = NSDate()
         
         cell6.textLabel?.text = "Fruits"
-        cell6.selections = ["None", "Apple", "Grape", "Orange"] // We must init selection list
-        cell6.selectedIndex = 1 // We must assign initial selected value
-        
-        cell7.textLabel?.text = "iPhone"
-        cell7.selections = ["iPhone 6", "iPhone 6 Plus", "iPhone 5s"]
-        cell7.selectedIndex = 0
+        let fruitsSelectionFormViewController = KHASelectionFormViewController()
+        fruitsSelectionFormViewController.title = "Fruits"
+        fruitsSelectionFormViewController.selections = ["None", "Apple", "Grape", "Orange"] // We must init selection list
+        fruitsSelectionFormViewController.selectedIndex = 1 // We must assign initial selected value
+        cell6.selectionFormViewController = fruitsSelectionFormViewController
+    
+        cell7.textLabel?.text = "Phone"
+        let phoneSelectionFormViewController = PhoneSelectionFormViewController() // We can use custom controller
+        cell7.selectionFormViewController = phoneSelectionFormViewController
         
         cell8.textView.placeholder = "placeholder" // We can add placeholder on textview
         
@@ -102,7 +105,7 @@ class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
         println(cell4.date)
         
         let cell6 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 2))
-        println(cell6.selections[cell6.selectedIndex])
+        println(cell6.selectionFormViewController.selections[cell6.selectionFormViewController.selectedIndex])
     }
     
     func didPressedCancelButton(sender: UIButton) {

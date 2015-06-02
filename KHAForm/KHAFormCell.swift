@@ -57,8 +57,7 @@ public class KHAFormCell: UITableViewCell {
     public let sswitch: UISwitch = UISwitch()
     public let textField: UITextField = UITextField()
     public let textView: UIPlaceholderTextView = UIPlaceholderTextView()
-    public var selections: [String] = []
-    public var selectedIndex: Int = 0
+    public var selectionFormViewController = KHASelectionFormViewController()
     
     // MARK: How can I implement class cluster at init?
     // The comment outed code below doesn't work.
