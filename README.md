@@ -157,7 +157,7 @@ class PhoneSelectionFormViewController: KHASelectionFormViewController, KHASelec
 ```
 
 ###Contact
-[@kohei_hayakawa](https://twitter.com/kohei_hayakawa)
+[@pettarou2](https://twitter.com/pettarou2)
 
 ###License
 KHAForm is released under the MIT license. See LICENSE for details.
