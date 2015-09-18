@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/KoheiHayakawa/KHAForm"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Kohei Hayakawa" => "kohei.hayakawa.5@gmail.com" }
-  s.social_media_url   = "http://twitter.com/kohei_hayakawa"
+  s.social_media_url   = "http://twitter.com/pettarou2"
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/KoheiHayakawa/KHAForm.git", :tag => "0.2.0" }
   s.source_files  = "KHAForm"
