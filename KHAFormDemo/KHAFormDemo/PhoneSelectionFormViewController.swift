@@ -9,7 +9,7 @@
 import UIKit
 import KHAForm
 
-// Inherit KHASelectionFormViewController and adopt KHASelectionFormViewDataSource
+// Inherit KHASelectionFormViewController
 
 class PhoneSelectionFormViewController: KHASelectionFormViewController {
     
