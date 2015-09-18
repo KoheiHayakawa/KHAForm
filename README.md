@@ -31,7 +31,7 @@ import UIKit
 import KHAForm // Import KHAForm
 
 
-// Inherit KHAFormViewController and adopt KHAFormViewDataSource
+// Inherit KHAFormViewController
 
 class ExampleFormViewController: KHAFormViewController {
     
@@ -132,7 +132,7 @@ If we use custom selection form view controller, this is an example code below.
 import UIKit
 import KHAForm
 
-// Inherit KHASelectionFormViewController and adopt KHASelectionFormViewDataSource
+// Inherit KHASelectionFormViewController
 
 class PhoneSelectionFormViewController: KHASelectionFormViewController {
     
