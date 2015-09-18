@@ -11,7 +11,7 @@ import KHAForm
 
 // Inherit KHASelectionFormViewController and adopt KHASelectionFormViewDataSource
 
-class PhoneSelectionFormViewController: KHASelectionFormViewController, KHASelectionFormViewDataSource {
+class PhoneSelectionFormViewController: KHASelectionFormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

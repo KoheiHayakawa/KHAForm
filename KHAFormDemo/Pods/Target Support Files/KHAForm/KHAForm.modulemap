@@ -1,5 +1,5 @@
 framework module KHAForm {
-  umbrella header "Pods-KHAForm-umbrella.h"
+  umbrella header "KHAForm-umbrella.h"
 
   export *
   module * { export * }

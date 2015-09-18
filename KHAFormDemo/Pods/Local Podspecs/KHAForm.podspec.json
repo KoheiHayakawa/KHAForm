@@ -1,6 +1,6 @@
 {
   "name": "KHAForm",
-  "version": "0.0.8",
+  "version": "0.1.8",
   "summary": "Simple tableview form in swift",
   "homepage": "https://github.com/KoheiHayakawa/KHAForm",
   "license": {
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/KoheiHayakawa/KHAForm.git",
-    "tag": "0.0.8"
+    "tag": "0.1.8"
   },
   "source_files": "KHAForm"
 }

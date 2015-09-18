@@ -23,7 +23,7 @@ class KHAButtonFormCell: KHAFormCell {
         button.setTitle("Button", forState: .Normal)
         button.titleLabel?.font = UIFont.systemFontOfSize(kFontSize)
         button.titleLabel?.textAlignment = .Center
-        button.setTranslatesAutoresizingMaskIntoConstraints(false)
+        button.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(button)
 
         contentView.addConstraints([
@@ -54,7 +54,7 @@ class KHAButtonFormCell: KHAFormCell {
         )
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

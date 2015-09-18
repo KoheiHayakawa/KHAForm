@@ -7,16 +7,16 @@
 
 ###CocoaPods
 ~~~
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
 pod 'KHAForm'
 ~~~
 
 ###Requirements
-* iOS 8.0+
-* Xcode 6.3+
-* Swift 1.2
+* iOS 9.0
+* Xcode 7.0
+* Swift 2.0
 
 ###Interface
 <img alt="demo" src="https://raw.githubusercontent.com/wiki/KoheiHayakawa/KHAForm/images/demo.gif" width="200"/>

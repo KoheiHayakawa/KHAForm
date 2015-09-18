@@ -18,7 +18,7 @@ class KHATextFieldFormCell: KHAFormCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .None
 
-        textField.setTranslatesAutoresizingMaskIntoConstraints(false)
+        textField.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(textField)
         
         // TODO: Fix constant value of left and right. 
@@ -52,7 +52,7 @@ class KHATextFieldFormCell: KHAFormCell {
         )
     }    
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

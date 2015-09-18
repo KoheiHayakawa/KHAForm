@@ -63,7 +63,7 @@ public class KHASelectionFormViewController: UITableViewController, KHASelection
     }
 
     override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) 
         
         cell.textLabel?.text = selections[indexPath.row]
         

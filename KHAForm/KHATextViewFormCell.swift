@@ -27,7 +27,7 @@ class KHATextViewFormCell: KHAFormCell {
             height: kCellHeight)
         contentView.addSubview(textView)
         textView.font = UIFont.systemFontOfSize(kFontSize)
-        textView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        textView.translatesAutoresizingMaskIntoConstraints = false
         
         // TODO: Fix constant value of left and right.
         // Current value is optimized for iPhone 6.
@@ -60,7 +60,7 @@ class KHATextViewFormCell: KHAFormCell {
         )
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
@@ -95,7 +95,7 @@ public class UIPlaceholderTextView: UITextView {
         }
         self.sendSubviewToBack(placeholderLabel)
         
-        if(count(self.text) == 0 && self.placeholder.length > 0){
+        if(self.text.characters.count == 0 && self.placeholder.length > 0){
             self.viewWithTag(999)?.alpha = 1
         }
         super.drawRect(rect)
@@ -105,7 +105,7 @@ public class UIPlaceholderTextView: UITextView {
         if(self.placeholder.length == 0){
             return
         }
-        if(count(self.text) == 0) {
+        if(self.text.characters.count == 0) {
             self.viewWithTag(999)?.alpha = 1
         }else{
             self.viewWithTag(999)?.alpha = 0

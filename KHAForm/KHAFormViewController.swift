@@ -89,7 +89,7 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
     
     override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = formCellForIndexPath(indexPath)
+        let cell = formCellForIndexPath(indexPath)
         
         if cell is KHATextFieldFormCell {
             cell.textField.delegate = self
@@ -179,7 +179,7 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
             before = (datePickerIndexPath?.row < indexPath.row) && (datePickerIndexPath?.section == indexPath.section)
         }
         
-        var sameCellClicked = ((datePickerIndexPath?.row == indexPath.row + 1) && (datePickerIndexPath?.section == indexPath.section))
+        let sameCellClicked = ((datePickerIndexPath?.row == indexPath.row + 1) && (datePickerIndexPath?.section == indexPath.section))
         
         // remove any date picker cell if it exists
         if hasInlineDatePicker() {
@@ -235,14 +235,14 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
             targetedCellIndexPath = NSIndexPath(forRow: datePickerIndexPath!.row - 1, inSection: datePickerIndexPath!.section)
         } else {
             // external date picker: update the current "selected" cell's date
-            if let selectedIndexPath = tableView.indexPathForSelectedRow() {
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
                 targetedCellIndexPath = selectedIndexPath
             }
         }
         
         // update the cell's date string
         if let selectedIndexPath = targetedCellIndexPath {
-            var cell = tableView.cellForRowAtIndexPath(targetedCellIndexPath!) as! KHADateFormCell
+            let cell = tableView.cellForRowAtIndexPath(selectedIndexPath) as! KHADateFormCell
             let targetedDatePicker = sender
             cell.date = targetedDatePicker.date
         }

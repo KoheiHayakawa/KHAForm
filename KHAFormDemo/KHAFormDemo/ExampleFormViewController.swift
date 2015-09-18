@@ -12,7 +12,7 @@ import KHAForm // Import KHAForm
 
 // Inherit KHAFormViewController and adopt KHAFormViewDataSource
 
-class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
+class ExampleFormViewController: KHAFormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,28 +88,28 @@ class ExampleFormViewController: KHAFormViewController, KHAFormViewDataSource {
     }
     
     func didPressedDeleteButton(sender: UIButton) {
-        println("delete")
+        print("delete")
         
         // We can access to the first cell contains text field...
         let cell1 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 0))
-        println(cell1.textField.text)
+        print(cell1.textField.text)
         
         // ...and second cell contains segmented controller, etc...
         let cell2 = formCellForIndexPath(NSIndexPath(forRow: 1, inSection: 0))
-        println(cell2.segmentedControl.selectedSegmentIndex)
+        print(cell2.segmentedControl.selectedSegmentIndex)
         
         let cell3 = formCellForIndexPath(NSIndexPath(forRow: 2, inSection: 0))
-        println(cell3.sswitch.on)
+        print(cell3.sswitch.on)
         
         let cell4 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 1))
-        println(cell4.date)
+        print(cell4.date)
         
         let cell6 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 2))
-        println(cell6.selectionFormViewController.selections[cell6.selectionFormViewController.selectedIndex])
+        print(cell6.selectionFormViewController.selections[cell6.selectionFormViewController.selectedIndex])
     }
     
     func didPressedCancelButton(sender: UIButton) {
-        println("cancel")
+        print("cancel")
     }
 
 }
