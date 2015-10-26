@@ -28,7 +28,12 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
         super.viewDidLoad()
         
         // init form structure
+        reloadForm()
+    }
+    
+    public func reloadForm() {
         cells = formCellsInForm(self)
+        tableView.reloadData()
     }
     
     /*! Determine form structure by using two-dimensional array.
