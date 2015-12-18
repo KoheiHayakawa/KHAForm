@@ -132,7 +132,7 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
     
     /*! Updates the UIDatePicker's value to match with the date of the cell above it.
     */
-    private func updateDatePicker() {
+    public func updateDatePicker() {
         if let indexPath = datePickerIndexPath {
             if let associatedDatePickerCell = tableView.cellForRowAtIndexPath(indexPath) {
                 let cell = cells[indexPath.section][indexPath.row - 1] as! KHADateFormCell
