@@ -46,10 +46,15 @@ public enum KHAFormCellType {
     }
 }
 
+public protocol KHADateFormCellDelegate {
+    func dateDidChange(date:NSDate)
+}
+
 public class KHAFormCell: UITableViewCell {
 
     public let button: UIButton = UIButton()
     public var date: NSDate = NSDate()
+    public var dateDelegate:KHADateFormCellDelegate?
     public var dateFormatter = NSDateFormatter()
     public var datePickerMode = UIDatePickerMode.DateAndTime
     public let datePicker: UIDatePicker = UIDatePicker()
