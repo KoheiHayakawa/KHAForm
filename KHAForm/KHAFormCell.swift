@@ -63,7 +63,7 @@ public class KHAFormCell: UITableViewCell {
     public let textField: UITextField = UITextField()
     public let textView: UIPlaceholderTextView = UIPlaceholderTextView()
     public var selectionFormViewController = KHASelectionFormViewController()
-    
+    public var customInlineCell: KHAFormCell?
     // MARK: How can I implement class cluster at init?
     // The comment outed code below doesn't work.
     
