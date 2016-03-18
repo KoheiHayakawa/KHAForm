@@ -18,6 +18,9 @@ class KHADateFormCell: KHAFormCell {
         willSet {
             detailTextLabel?.text = dateFormatter.stringFromDate(newValue)
         }
+        didSet {
+            dateDelegate?.dateDidChange(date)
+        }
     }
     
     override var dateFormatter: NSDateFormatter {

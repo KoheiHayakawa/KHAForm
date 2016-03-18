@@ -46,10 +46,15 @@ public enum KHAFormCellType {
     }
 }
 
+public protocol KHADateFormCellDelegate {
+    func dateDidChange(date:NSDate)
+}
+
 public class KHAFormCell: UITableViewCell {
 
     public let button: UIButton = UIButton()
     public var date: NSDate = NSDate()
+    public var dateDelegate:KHADateFormCellDelegate?
     public var dateFormatter = NSDateFormatter()
     public var datePickerMode = UIDatePickerMode.DateAndTime
     public let datePicker: UIDatePicker = UIDatePicker()
@@ -58,7 +63,7 @@ public class KHAFormCell: UITableViewCell {
     public let textField: UITextField = UITextField()
     public let textView: UIPlaceholderTextView = UIPlaceholderTextView()
     public var selectionFormViewController = KHASelectionFormViewController()
-    
+    public var customInlineCell: KHAFormCell?
     // MARK: How can I implement class cluster at init?
     // The comment outed code below doesn't work.
     
