@@ -114,6 +114,7 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
         } else if cell is KHADatePickerFormCell {
             let dateCell = formCellForIndexPath(NSIndexPath(forRow: indexPath.row-1, inSection: indexPath.section))
             cell.datePicker.datePickerMode = dateCell.datePickerMode
+            cell.datePicker.minuteInterval = dateCell.datePicker.minuteInterval
             cell.datePicker.addTarget(self, action: Selector("didDatePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
         }
         return cell
