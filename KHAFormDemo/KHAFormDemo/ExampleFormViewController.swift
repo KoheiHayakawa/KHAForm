@@ -75,11 +75,11 @@ class ExampleFormViewController: KHAFormViewController {
         
         cell9.button.setTitle("Delete", forState: .Normal)
         cell9.button.setTitleColor(UIColor.redColor(), forState: .Normal)
-        cell9.button.addTarget(self, action: Selector("didPressedDeleteButton:"), forControlEvents: UIControlEvents.TouchUpInside)
+        cell9.button.addTarget(self, action: #selector(ExampleFormViewController.didPressedDeleteButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         
         cell10.button.setTitle("Cancel", forState: .Normal)
         cell10.button.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
-        cell10.button.addTarget(self, action: Selector("didPressedCancelButton:"), forControlEvents: UIControlEvents.TouchUpInside)
+        cell10.button.addTarget(self, action: #selector(ExampleFormViewController.didPressedCancelButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         
         cell11.textLabel?.text = "custom cell"
         
