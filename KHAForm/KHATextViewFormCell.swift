@@ -78,7 +78,7 @@ public class UIPlaceholderTextView: UITextView {
     
     override public func drawRect(rect: CGRect) {
 
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "textChanged:", name: UITextViewTextDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(UIPlaceholderTextView.textChanged(_:)), name: UITextViewTextDidChangeNotification, object: nil)
         
         if(self.placeholder.length > 0) {
             self.placeholderLabel.frame           = CGRectMake(4,8,self.bounds.size.width - 16,0)
