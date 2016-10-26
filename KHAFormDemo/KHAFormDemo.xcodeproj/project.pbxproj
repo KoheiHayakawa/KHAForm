@@ -14,7 +14,7 @@
 		55EC5AE61AD11CEB00B0F964 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55EC5AE41AD11CEB00B0F964 /* LaunchScreen.xib */; };
 		55EC5AF21AD11CEB00B0F964 /* KHAFormDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC5AF11AD11CEB00B0F964 /* KHAFormDemoTests.swift */; };
 		55F969931B1DA9ED00338F81 /* PhoneSelectionFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F969921B1DA9ED00338F81 /* PhoneSelectionFormViewController.swift */; };
-		6B25513A743145D6A6751175 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33105A9FF00C537B57A47B3F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		79273A11527664A12F64AEDF /* Pods_KHAFormDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B4D6FEE148BEEC720A68AE /* Pods_KHAFormDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		098E6AA2D75DFD4A4FD8B757 /* Pods-KHAFormDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHAFormDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KHAFormDemo/Pods-KHAFormDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		33105A9FF00C537B57A47B3F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		424D3B6A7F276D2D6C2701EF /* Pods-KHAFormDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHAFormDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KHAFormDemo/Pods-KHAFormDemo.release.xcconfig"; sourceTree = "<group>"; };
+		45B4D6FEE148BEEC720A68AE /* Pods_KHAFormDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KHAFormDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EC5AD61AD11CEB00B0F964 /* KHAFormDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHAFormDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EC5ADA1AD11CEB00B0F964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55EC5ADB1AD11CEB00B0F964 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +43,6 @@
 		55EC5AF01AD11CEB00B0F964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55EC5AF11AD11CEB00B0F964 /* KHAFormDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHAFormDemoTests.swift; sourceTree = "<group>"; };
 		55F969921B1DA9ED00338F81 /* PhoneSelectionFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneSelectionFormViewController.swift; sourceTree = "<group>"; };
-		A9F8FE0834349053D0097BD5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		F3A211C04486838412333AEF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B25513A743145D6A6751175 /* Pods.framework in Frameworks */,
+				79273A11527664A12F64AEDF /* Pods_KHAFormDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,23 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A6012BB70BB489CE7D340F0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A9F8FE0834349053D0097BD5 /* Pods.debug.xcconfig */,
-				F3A211C04486838412333AEF /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		55EC5ACD1AD11CEB00B0F964 = {
 			isa = PBXGroup;
 			children = (
 				55EC5AD81AD11CEB00B0F964 /* KHAFormDemo */,
 				55EC5AEE1AD11CEB00B0F964 /* KHAFormDemoTests */,
 				55EC5AD71AD11CEB00B0F964 /* Products */,
-				2A6012BB70BB489CE7D340F0 /* Pods */,
 				697995F5EFC79EE193DE4AA4 /* Frameworks */,
+				EAF508A5B81AF22524647441 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,8 +127,18 @@
 			isa = PBXGroup;
 			children = (
 				33105A9FF00C537B57A47B3F /* Pods.framework */,
+				45B4D6FEE148BEEC720A68AE /* Pods_KHAFormDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAF508A5B81AF22524647441 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				098E6AA2D75DFD4A4FD8B757 /* Pods-KHAFormDemo.debug.xcconfig */,
+				424D3B6A7F276D2D6C2701EF /* Pods-KHAFormDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,12 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55EC5AF51AD11CEB00B0F964 /* Build configuration list for PBXNativeTarget "KHAFormDemo" */;
 			buildPhases = (
-				FA3FAF83264B9E5D989DE583 /* Check Pods Manifest.lock */,
+				D619998A1F7FF80703BE4B17 /* [CP] Check Pods Manifest.lock */,
 				55EC5AD21AD11CEB00B0F964 /* Sources */,
 				55EC5AD31AD11CEB00B0F964 /* Frameworks */,
 				55EC5AD41AD11CEB00B0F964 /* Resources */,
-				BBC00B06BF2FC1A351C157CF /* Embed Pods Frameworks */,
-				0936CA91E8FA9DC6E61121D5 /* Copy Pods Resources */,
+				9060861BD740D64E2A6980B1 /* [CP] Embed Pods Frameworks */,
+				26A412BC1CF24134637964C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,9 +195,11 @@
 				TargetAttributes = {
 					55EC5AD51AD11CEB00B0F964 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0800;
 					};
 					55EC5AEA1AD11CEB00B0F964 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = 55EC5AD51AD11CEB00B0F964;
 					};
 				};
@@ -240,49 +244,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0936CA91E8FA9DC6E61121D5 /* Copy Pods Resources */ = {
+		26A412BC1CF24134637964C5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KHAFormDemo/Pods-KHAFormDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BBC00B06BF2FC1A351C157CF /* Embed Pods Frameworks */ = {
+		9060861BD740D64E2A6980B1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KHAFormDemo/Pods-KHAFormDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FA3FAF83264B9E5D989DE583 /* Check Pods Manifest.lock */ = {
+		D619998A1F7FF80703BE4B17 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -416,7 +420,7 @@
 		};
 		55EC5AF61AD11CEB00B0F964 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9F8FE0834349053D0097BD5 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 098E6AA2D75DFD4A4FD8B757 /* Pods-KHAFormDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KHAFormDemo/Info.plist;
@@ -424,12 +428,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.koheihayakawa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		55EC5AF71AD11CEB00B0F964 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3A211C04486838412333AEF /* Pods.release.xcconfig */;
+			baseConfigurationReference = 424D3B6A7F276D2D6C2701EF /* Pods-KHAFormDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KHAFormDemo/Info.plist;
@@ -437,6 +442,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.koheihayakawa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -456,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.koheihayakawa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KHAFormDemo.app/KHAFormDemo";
 			};
 			name = Debug;
@@ -472,6 +479,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.koheihayakawa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KHAFormDemo.app/KHAFormDemo";
 			};
 			name = Release;

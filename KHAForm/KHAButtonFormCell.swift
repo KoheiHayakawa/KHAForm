@@ -14,41 +14,41 @@ class KHAButtonFormCell: KHAFormCell {
         return "KHAButtonCell"
     }
     
-    private let kFontSize: CGFloat = 15
+    fileprivate let kFontSize: CGFloat = 15
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        selectionStyle = .None
+        selectionStyle = .none
         
-        button.setTitle("Button", forState: .Normal)
-        button.titleLabel?.font = UIFont.systemFontOfSize(kFontSize)
-        button.titleLabel?.textAlignment = .Center
+        button.setTitle("Button", for: UIControlState())
+        button.titleLabel?.font = UIFont.systemFont(ofSize: kFontSize)
+        button.titleLabel?.textAlignment = .center
         button.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(button)
 
         contentView.addConstraints([
             NSLayoutConstraint(
                 item: button,
-                attribute: .Left,
-                relatedBy: .Equal,
+                attribute: .left,
+                relatedBy: .equal,
                 toItem: contentView,
-                attribute: .Left,
+                attribute: .left,
                 multiplier: 1,
                 constant: 0),
             NSLayoutConstraint(
                 item: button,
-                attribute: .Right,
-                relatedBy: .Equal,
+                attribute: .right,
+                relatedBy: .equal,
                 toItem: contentView,
-                attribute: .Right,
+                attribute: .right,
                 multiplier: 1,
                 constant: 0),
             NSLayoutConstraint(
                 item: button,
-                attribute: .Height,
-                relatedBy: .Equal,
+                attribute: .height,
+                relatedBy: .equal,
                 toItem: nil,
-                attribute: .NotAnAttribute,
+                attribute: .notAnAttribute,
                 multiplier: 1,
                 constant: 44)]
         )

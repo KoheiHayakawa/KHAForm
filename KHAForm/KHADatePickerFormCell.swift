@@ -14,7 +14,7 @@ class KHADatePickerFormCell: KHAFormCell {
         return "KHADatePickerCell"
     }
     
-    private let kCellHeight: CGFloat = 216
+    fileprivate let kCellHeight: CGFloat = 216
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -29,26 +29,26 @@ class KHADatePickerFormCell: KHAFormCell {
         contentView.addConstraints([
             NSLayoutConstraint(
                 item: datePicker,
-                attribute: .Left,
-                relatedBy: .Equal,
+                attribute: .left,
+                relatedBy: .equal,
                 toItem: contentView,
-                attribute: .Left,
+                attribute: .left,
                 multiplier: 1,
                 constant: 0),
             NSLayoutConstraint(
                 item: datePicker,
-                attribute: .Right,
-                relatedBy: .Equal,
+                attribute: .right,
+                relatedBy: .equal,
                 toItem: contentView,
-                attribute: .Right,
+                attribute: .right,
                 multiplier: 1,
                 constant: 0),
             NSLayoutConstraint(
                 item: datePicker,
-                attribute: .Height,
-                relatedBy: .Equal,
+                attribute: .height,
+                relatedBy: .equal,
                 toItem: nil,
-                attribute: .NotAnAttribute,
+                attribute: .notAnAttribute,
                 multiplier: 1,
                 constant: kCellHeight)]
         )

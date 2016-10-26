@@ -9,19 +9,19 @@
 import UIKit
 
 protocol KHASelectionFormViewDelegate: class {
-    func selectionFormDidChangeSelectedIndex(selectionForm: KHASelectionFormViewController)
+    func selectionFormDidChangeSelectedIndex(_ selectionForm: KHASelectionFormViewController)
 }
 
 public protocol KHASelectionFormViewDataSource {
-    func selectionsForSelectionForm(selectionForm: KHASelectionFormViewController) -> [String]
-    func selectedIndexForSelectionForm(selectionForm: KHASelectionFormViewController) -> Int
+    func selectionsForSelectionForm(_ selectionForm: KHASelectionFormViewController) -> [String]
+    func selectedIndexForSelectionForm(_ selectionForm: KHASelectionFormViewController) -> Int
 }
 
-public class KHASelectionFormViewController: UITableViewController, KHASelectionFormViewDataSource {
+open class KHASelectionFormViewController: UITableViewController, KHASelectionFormViewDataSource {
 
-    private let cellID = "cell"
-    public var selections: [String] = []
-    public var selectedIndex: Int = 0
+    fileprivate let cellID = "cell"
+    open var selections: [String] = []
+    open var selectedIndex: Int = 0
     weak var delegate: KHASelectionFormViewDelegate?
 
     
@@ -29,66 +29,66 @@ public class KHASelectionFormViewController: UITableViewController, KHASelection
     
     // Form is always grouped tableview
     convenience init() {
-        self.init(style: .Grouped)
+        self.init(style: .grouped)
         selections = selectionsForSelectionForm(self)
         selectedIndex = selectedIndexForSelectionForm(self)
     }
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
         tableView.reloadData()
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: self.selectedIndex, inSection: 0), atScrollPosition: .Top, animated: false)
+        DispatchQueue.main.async(execute: { () -> Void in
+            self.tableView.scrollToRow(at: IndexPath(row: self.selectedIndex, section: 0), at: .top, animated: false)
         })
     }
 
-    override public func didReceiveMemoryWarning() {
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    public func selectionsForSelectionForm(selectionForm: KHASelectionFormViewController) -> [String] {
+    open func selectionsForSelectionForm(_ selectionForm: KHASelectionFormViewController) -> [String] {
         return selections
     }
     
-    public func selectedIndexForSelectionForm(selectionForm: KHASelectionFormViewController) -> Int {
+    open func selectedIndexForSelectionForm(_ selectionForm: KHASelectionFormViewController) -> Int {
         return selectedIndex
     }
 
     
     // MARK: - Table view data source
     
-    override public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return selections.count
     }
 
-    override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) 
+    override open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) 
         
-        cell.textLabel?.text = selections[indexPath.row]
+        cell.textLabel?.text = selections[(indexPath as NSIndexPath).row]
         
-        if selectedIndex == indexPath.row {
-            cell.accessoryType = .Checkmark
+        if selectedIndex == (indexPath as NSIndexPath).row {
+            cell.accessoryType = .checkmark
         } else {
-            cell.accessoryType = .None
+            cell.accessoryType = .none
         }
         
         return cell
     }
 
-    override public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // Remove checkmark from old selected cell
-        let oldSelectedCell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: selectedIndex, inSection: 0))
-        oldSelectedCell?.accessoryType = .None
+        let oldSelectedCell = tableView.cellForRow(at: IndexPath(row: selectedIndex, section: 0))
+        oldSelectedCell?.accessoryType = .none
         
         // Add checkmark to new selected cell
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
-        cell?.accessoryType = .Checkmark
-        selectedIndex = indexPath.row
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.accessoryType = .checkmark
+        selectedIndex = (indexPath as NSIndexPath).row
         delegate?.selectionFormDidChangeSelectedIndex(self)
         
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }

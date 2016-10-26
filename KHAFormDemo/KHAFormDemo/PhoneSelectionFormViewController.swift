@@ -23,11 +23,11 @@ class PhoneSelectionFormViewController: KHASelectionFormViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func selectionsForSelectionForm(selectionForm: KHASelectionFormViewController) -> [String] {
+    override func selectionsForSelectionForm(_ selectionForm: KHASelectionFormViewController) -> [String] {
         return ["iPhone 6", "iPhone 6 Plus", "iPhone 5s"]
     }
     
-    override func selectedIndexForSelectionForm(selectionForm: KHASelectionFormViewController) -> Int {
+    override func selectedIndexForSelectionForm(_ selectionForm: KHASelectionFormViewController) -> Int {
         return 0
     }
     

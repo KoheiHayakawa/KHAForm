@@ -1,14 +1,16 @@
 PODS:
-  - KHAForm (0.1.8)
+  - KHAForm (0.3.3)
 
 DEPENDENCIES:
   - KHAForm (from `..`)
 
 EXTERNAL SOURCES:
   KHAForm:
-    :path: ".."
+    :path: ..
 
 SPEC CHECKSUMS:
-  KHAForm: cdaa8215d255cf44696a68afa578cb4ac70ca096
+  KHAForm: 77a807ecf246d06a83c4e5232c838082705efb2f
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 7294bd84e5345acb652bd59f6ed8a6250ca13ef6
+
+COCOAPODS: 1.1.1
