@@ -14,28 +14,28 @@ class KHADateFormCell: KHAFormCell {
         return "KHADateCell"
     }
     
-    override var date: NSDate {
+    override var date: Date {
         willSet {
-            detailTextLabel?.text = dateFormatter.stringFromDate(newValue)
+            detailTextLabel?.text = dateFormatter.string(from: newValue)
         }
         didSet {
             dateDelegate?.dateDidChange(date)
         }
     }
     
-    override var dateFormatter: NSDateFormatter {
+    override var dateFormatter: DateFormatter {
         willSet {
-            detailTextLabel?.text = newValue.stringFromDate(date)
+            detailTextLabel?.text = newValue.string(from: date)
         }
     }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: .Value1, reuseIdentifier: reuseIdentifier)
+        super.init(style: .value1, reuseIdentifier: reuseIdentifier)
         textLabel?.text = "Label"
         detailTextLabel?.text = "Date"
-        dateFormatter.dateStyle = .ShortStyle
-        dateFormatter.timeStyle = .ShortStyle
-        datePickerMode = .DateAndTime
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .short
+        datePickerMode = .dateAndTime
     }
 
     required init?(coder aDecoder: NSCoder) {

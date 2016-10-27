@@ -16,7 +16,7 @@ class KHATextFieldFormCell: KHAFormCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        selectionStyle = .None
+        selectionStyle = .none
 
         textField.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(textField)
@@ -27,26 +27,26 @@ class KHATextFieldFormCell: KHAFormCell {
         contentView.addConstraints([
             NSLayoutConstraint(
                 item: textField,
-                attribute: .Left,
-                relatedBy: .Equal,
+                attribute: .left,
+                relatedBy: .equal,
                 toItem: contentView,
-                attribute: .Left,
+                attribute: .left,
                 multiplier: 1,
                 constant: 15),
             NSLayoutConstraint(
                 item: textField,
-                attribute: .Right,
-                relatedBy: .Equal,
+                attribute: .right,
+                relatedBy: .equal,
                 toItem: contentView,
-                attribute: .Right,
+                attribute: .right,
                 multiplier: 1,
                 constant: -10),
             NSLayoutConstraint(
                 item: textField,
-                attribute: .Height,
-                relatedBy: .Equal,
+                attribute: .height,
+                relatedBy: .equal,
                 toItem: nil,
-                attribute: .NotAnAttribute,
+                attribute: .notAnAttribute,
                 multiplier: 1,
                 constant: 44)]
         )

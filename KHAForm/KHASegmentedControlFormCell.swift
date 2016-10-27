@@ -16,7 +16,7 @@ class KHASegmentedControlFormCell: KHAFormCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        selectionStyle = .None
+        selectionStyle = .none
         textLabel?.text = "Label"
         segmentedControl = UISegmentedControl(items: ["First", "Second"])
         accessoryView = segmentedControl

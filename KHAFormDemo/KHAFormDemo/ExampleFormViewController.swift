@@ -24,41 +24,41 @@ class ExampleFormViewController: KHAFormViewController {
     }
 
     // Override a method to determine form structure
-    override func formCellsInForm(form: KHAFormViewController) -> [[KHAFormCell]] {
+    override func formCellsInForm(_ form: KHAFormViewController) -> [[KHAFormCell]] {
         
         // setup cells
-        let cell1 = KHAFormCell.formCellWithType(.TextField) // We can init form cell with type.
-        let cell2 = dequeueReusableFormCellWithType(.SegmentedControl) // But it's better to dequeue.
-        let cell3 = dequeueReusableFormCellWithType(.Switch)
-        let cell4 = dequeueReusableFormCellWithType(.Date)
-        let cell5 = dequeueReusableFormCellWithType(.Date)
-        let cell6 = dequeueReusableFormCellWithType(.Selection)
-        let cell7 = dequeueReusableFormCellWithType(.Selection)
-        let cell8 = dequeueReusableFormCellWithType(.TextView)
-        let cell9 = dequeueReusableFormCellWithType(.Button)
-        let cell10 = dequeueReusableFormCellWithType(.Button)
+        let cell1 = KHAFormCell.formCellWithType(.textField) // We can init form cell with type.
+        let cell2 = dequeueReusableFormCellWithType(.segmentedControl) // But it's better to dequeue.
+        let cell3 = dequeueReusableFormCellWithType(.switch)
+        let cell4 = dequeueReusableFormCellWithType(.date)
+        let cell5 = dequeueReusableFormCellWithType(.date)
+        let cell6 = dequeueReusableFormCellWithType(.selection)
+        let cell7 = dequeueReusableFormCellWithType(.selection)
+        let cell8 = dequeueReusableFormCellWithType(.textView)
+        let cell9 = dequeueReusableFormCellWithType(.button)
+        let cell10 = dequeueReusableFormCellWithType(.button)
         let cell11 = KHAFormCell()   // we can use custom cell
         let cell12 = KHAFormCell()
         
         // settings for each cell
         cell1.textField.text = "Title"
         cell1.textField.placeholder = "placeholder"
-        cell1.textField.clearButtonMode = UITextFieldViewMode.Always
+        cell1.textField.clearButtonMode = UITextFieldViewMode.always
         
-        cell2.segmentedControl.setTitle("First", forSegmentAtIndex: 0)
-        cell2.segmentedControl.setTitle("Second", forSegmentAtIndex: 1)
-        cell2.segmentedControl.insertSegmentWithTitle("Third", atIndex: 2, animated: false) // Add segment
+        cell2.segmentedControl.setTitle("First", forSegmentAt: 0)
+        cell2.segmentedControl.setTitle("Second", forSegmentAt: 1)
+		cell2.segmentedControl.insertSegment(withTitle: "Third", at: 2, animated: false) // Add segment
         
         cell4.textLabel?.text = "Start"
-        cell4.date = NSDate()
+        cell4.date = Date()
 
         cell5.textLabel?.text = "End"
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateStyle = .LongStyle
-        dateFormatter.timeStyle = .NoStyle
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+        dateFormatter.timeStyle = .none
         cell5.dateFormatter = dateFormatter // We can change date format
-        cell5.datePickerMode = .Date        // and picker mode
-        cell5.date = NSDate()
+        cell5.datePickerMode = .date        // and picker mode
+        cell5.date = Date()
         
         cell6.textLabel?.text = "Fruits"
         let fruitsSelectionFormViewController = KHASelectionFormViewController()
@@ -73,13 +73,13 @@ class ExampleFormViewController: KHAFormViewController {
         
         cell8.textView.placeholder = "placeholder" // We can add placeholder on textview
         
-        cell9.button.setTitle("Delete", forState: .Normal)
-        cell9.button.setTitleColor(UIColor.redColor(), forState: .Normal)
-        cell9.button.addTarget(self, action: #selector(ExampleFormViewController.didPressedDeleteButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        cell9.button.setTitle("Delete", for: .normal)
+        cell9.button.setTitleColor(UIColor.red, for: .normal)
+        cell9.button.addTarget(self, action: #selector(ExampleFormViewController.didPressedDeleteButton(_:)), for: UIControlEvents.touchUpInside)
         
-        cell10.button.setTitle("Cancel", forState: .Normal)
-        cell10.button.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
-        cell10.button.addTarget(self, action: #selector(ExampleFormViewController.didPressedCancelButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        cell10.button.setTitle("Cancel", for: .normal)
+        cell10.button.setTitleColor(UIColor.darkGray, for: .normal)
+        cell10.button.addTarget(self, action: #selector(ExampleFormViewController.didPressedCancelButton(_:)), for: UIControlEvents.touchUpInside)
         
         cell11.textLabel?.text = "custom cell"
         
@@ -91,28 +91,30 @@ class ExampleFormViewController: KHAFormViewController {
         return [[cell1, cell2, cell3], [cell4, cell5], [cell6, cell7], [cell8], [cell9, cell10], [cell11], [cell12]]
     }
     
-    func didPressedDeleteButton(sender: UIButton) {
+    func didPressedDeleteButton(_ sender: UIButton) {
         print("delete")
         
         // We can access to the first cell contains text field...
-        let cell1 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 0))
+        let cell1 = formCellForIndexPath(IndexPath(row: 0, section: 0))
         print(cell1.textField.text)
         
         // ...and second cell contains segmented controller, etc...
-        let cell2 = formCellForIndexPath(NSIndexPath(forRow: 1, inSection: 0))
+        let cell2 = formCellForIndexPath(IndexPath(row: 1, section: 0))
         print(cell2.segmentedControl.selectedSegmentIndex)
         
-        let cell3 = formCellForIndexPath(NSIndexPath(forRow: 2, inSection: 0))
-        print(cell3.sswitch.on)
+        let cell3 = formCellForIndexPath(IndexPath(row: 2, section: 0))
+        print(cell3.sswitch.isOn)
         
-        let cell4 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 1))
+        let cell4 = formCellForIndexPath(IndexPath(row: 0, section: 1))
         print(cell4.date)
         
-        let cell6 = formCellForIndexPath(NSIndexPath(forRow: 0, inSection: 2))
-        print(cell6.selectionFormViewController.selections[cell6.selectionFormViewController.selectedIndex])
+        let cell6 = formCellForIndexPath(IndexPath(row: 0, section: 2))
+		
+	
+		print(cell6.selectionFormViewController.selections[cell6.selectionFormViewController.selectedIndex])
     }
     
-    func didPressedCancelButton(sender: UIButton) {
+    func didPressedCancelButton(_ sender: UIButton) {
         print("cancel")
     }
 

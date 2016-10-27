@@ -7,232 +7,239 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		043966C8EC8FB457AA1A4104382F35ED /* KHAFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B04A32A13FA85D80CC3C7D974735D /* KHAFormCell.swift */; };
-		06A79378239D650E7699FEF237885669 /* KHADatePickerFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A79C59421FB2927BF4D282FC4CCE1AF /* KHADatePickerFormCell.swift */; };
-		0C4C2C80D7D1BB0345FB453561912E93 /* KHASegmentedControlFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7891CB7869361D4A782A566AD8AA00 /* KHASegmentedControlFormCell.swift */; };
-		1526F66259F0F18A7D3A0141ECE269F8 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B2F9D591C5221C26B5F17E38F6729 /* Pods-dummy.m */; };
-		1D66EAFAFE7D26C9D6C8804A376916D7 /* KHAFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558EDD9C593CDA1AED4C297C988CBE7B /* KHAFormViewController.swift */; };
-		217FFAE60DDC710976CDCECE79C86D3F /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF258469C4D60DA197CD137BE1EEB209 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2746D723E9B28D69775EFD838BBC2901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103782424C3C2C7EB51CD460750BC496 /* Foundation.framework */; };
-		345B46B58F093C170F2BD2CA0D2E22C9 /* KHASwitchFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1FF65F930B9418974815BB41C3111C /* KHASwitchFormCell.swift */; };
-		7290446D07FFCFE246BD470668156A42 /* KHATextViewFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7032210158395DC307BE3B454CC79C4 /* KHATextViewFormCell.swift */; };
-		93C3FD129391E811A85B95CFDC648528 /* KHAButtonFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F845A772FD36EDF6A148AB9FA7D4A /* KHAButtonFormCell.swift */; };
-		95867C35E9A1DB9D25B5C41262913B0F /* KHASelectionFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ADAD259AA72A9EB63F3A90B7DEB3AB /* KHASelectionFormViewController.swift */; };
-		AF7DAE7E7AE19ED7746E6808AFD8F699 /* KHADateFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9799986D8CCDFB5F4B20803B5F032227 /* KHADateFormCell.swift */; };
-		B50FBFDDA28B85F22FD45C81F7A993DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103782424C3C2C7EB51CD460750BC496 /* Foundation.framework */; };
-		C5A0484847A83C291F4505E3A068EF99 /* KHAForm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F06DA51A50D96339AE002854FE79CE /* KHAForm-dummy.m */; };
-		D49859C3B6540C5FB772252BA8AC0306 /* KHASelectionFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2E62EC0601F2B6AE2E6D335DD7891 /* KHASelectionFormCell.swift */; };
-		E1BD0AC70A728F690E938DFE646D9DEF /* KHAForm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9567FE5483EBEFF22AD871BF84D59A79 /* KHAForm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9CA3A37F296B5C6D90A2BDD60B615FD /* KHATextFieldFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D7F422EC0D98606DAF9AB4C94998A /* KHATextFieldFormCell.swift */; };
+		40CF0019E2FF8EA62D4CF81D3D9A5D5C /* KHAFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC391015C9612EA034BF5BC96D821F /* KHAFormViewController.swift */; };
+		44B6440684A16F903C4D30424594F173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		4B1DA9EE1DC2B57A0060D8AF /* KHADateRepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1DA9ED1DC2B57A0060D8AF /* KHADateRepeatViewController.swift */; };
+		4B1DA9F01DC2B7110060D8AF /* KHADateRepeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1DA9EF1DC2B7110060D8AF /* KHADateRepeatCell.swift */; };
+		4B1DA9F21DC2B7730060D8AF /* KHADayOfWeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1DA9F11DC2B7730060D8AF /* KHADayOfWeekCell.swift */; };
+		59434CA9CC9D7998AB8A812537E539BC /* KHASelectionFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC92537A974CDBDA96001A71BB8115F /* KHASelectionFormViewController.swift */; };
+		619108BF257C59CBCCD60169C464CFBB /* KHASwitchFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4B837027F37A490B970473A3B0506 /* KHASwitchFormCell.swift */; };
+		772FE8D12E758535D04782845A10B08B /* KHAFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0F9C1A2292DECB1BDB7B8FE1875367 /* KHAFormCell.swift */; };
+		803CDBA7AB136CDBFA89F667D5725C92 /* KHAButtonFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCBAE0D8E1F2A4C2EA40262D8B9F911 /* KHAButtonFormCell.swift */; };
+		8F13CDC820FFEA8A8A7A4A501C907239 /* KHAForm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 253C2F4BF7F0038578233CDCC48E513E /* KHAForm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C4A605F3D2BA9A292525DD475DADF41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A642DE7D81089FB5A2ECE888DCD92C6A /* KHATextViewFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79369041183057A859B6956ACF9F5421 /* KHATextViewFormCell.swift */; };
+		AB370C7203273390AB14F31D9BABEB2E /* Pods-KHAFormDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F9826320D774DD3ED3D8AE263E7D24 /* Pods-KHAFormDemo-dummy.m */; };
+		B7EFA0C145EEC54C8EC1FD16D530C7A6 /* KHADatePickerFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA38FB047DEFA7AB7193B84F8856D44 /* KHADatePickerFormCell.swift */; };
+		C34FF2B34BCD378B055E5B978445BC55 /* KHASelectionFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5970F5475FA740C1166B3A111DF0539A /* KHASelectionFormCell.swift */; };
+		D356DC6F03FBB98F9801D3B48E508245 /* KHASegmentedControlFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9278F266102E8076D8839477E2C02AF1 /* KHASegmentedControlFormCell.swift */; };
+		E7941A9BBB9EF164FD8F44ED335A072B /* KHAForm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 176D5145E7C15788CE12E25DAC10E37A /* KHAForm-dummy.m */; };
+		E8754348CEEBFE1600741D4599D4C414 /* Pods-KHAFormDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E9FAE1BC81008EBFD0CFA5217726828 /* Pods-KHAFormDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F59C5B1721F29EC5D76D80889B9AE3C8 /* KHADateFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D7BE1F75E916FABA7B41653328E92C /* KHADateFormCell.swift */; };
+		FB1E715171269DED0FB1D966BC3C746F /* KHATextFieldFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A781277AD1B30147CB2E9452882B6B2 /* KHATextFieldFormCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B82F7A1E6C386BAACC7444582BF8B90F /* PBXContainerItemProxy */ = {
+		D09CAAC31DDE455F4981256EDC4733ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 008D41FA035810C03E8A1A2AE6390E29;
+			remoteGlobalIDString = 51696C1BFE88A9E505ED392F7546B736;
 			remoteInfo = KHAForm;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00ADAD259AA72A9EB63F3A90B7DEB3AB /* KHASelectionFormViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHASelectionFormViewController.swift; sourceTree = "<group>"; };
-		103782424C3C2C7EB51CD460750BC496 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		187CEF9EF80900EA1A52F127F775FE52 /* KHAForm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KHAForm-prefix.pch"; sourceTree = "<group>"; };
-		18BD393C83C4360C6E5EC48B1D53BA5F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		18F06DA51A50D96339AE002854FE79CE /* KHAForm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KHAForm-dummy.m"; sourceTree = "<group>"; };
-		1E7891CB7869361D4A782A566AD8AA00 /* KHASegmentedControlFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHASegmentedControlFormCell.swift; sourceTree = "<group>"; };
-		33832ECFD2F273DA532D7E5651B5ECC8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A79C59421FB2927BF4D282FC4CCE1AF /* KHADatePickerFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHADatePickerFormCell.swift; sourceTree = "<group>"; };
-		558EDD9C593CDA1AED4C297C988CBE7B /* KHAFormViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHAFormViewController.swift; sourceTree = "<group>"; };
-		5681F921884D26B730BC5FD02DE7E36A /* KHAForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KHAForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		584D7F422EC0D98606DAF9AB4C94998A /* KHATextFieldFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHATextFieldFormCell.swift; sourceTree = "<group>"; };
-		68FF8C76BFEE9DD3CF6A06FDC5EA6317 /* KHAForm-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "KHAForm-Private.xcconfig"; sourceTree = "<group>"; };
-		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		9567FE5483EBEFF22AD871BF84D59A79 /* KHAForm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KHAForm-umbrella.h"; sourceTree = "<group>"; };
-		9799986D8CCDFB5F4B20803B5F032227 /* KHADateFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHADateFormCell.swift; sourceTree = "<group>"; };
-		B31B04A32A13FA85D80CC3C7D974735D /* KHAFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHAFormCell.swift; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BCA07B1C10DB45B4C1144F366883E59C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		BF73BB6600A473900E6315DCBA1AA53E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		CF258469C4D60DA197CD137BE1EEB209 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D4F4BD492DA1AEB26DEF97C360646917 /* KHAForm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KHAForm.xcconfig; sourceTree = "<group>"; };
-		DB1FF65F930B9418974815BB41C3111C /* KHASwitchFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHASwitchFormCell.swift; sourceTree = "<group>"; };
-		E2E7F25F6DCFD76CA1B5530BE9B7E8B3 /* KHAForm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KHAForm.modulemap; sourceTree = "<group>"; };
-		E79B2F9D591C5221C26B5F17E38F6729 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7032210158395DC307BE3B454CC79C4 /* KHATextViewFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHATextViewFormCell.swift; sourceTree = "<group>"; };
-		FBC2E62EC0601F2B6AE2E6D335DD7891 /* KHASelectionFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHASelectionFormCell.swift; sourceTree = "<group>"; };
-		FE6F845A772FD36EDF6A148AB9FA7D4A /* KHAButtonFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHAButtonFormCell.swift; sourceTree = "<group>"; };
+		14F80A74C01A8C30D1504DB46826CBC1 /* KHAForm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KHAForm-prefix.pch"; sourceTree = "<group>"; };
+		176D5145E7C15788CE12E25DAC10E37A /* KHAForm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KHAForm-dummy.m"; sourceTree = "<group>"; };
+		18613C2D5C946F76967D14FB6ECD1709 /* KHAForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KHAForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CF5954315F0CA7F91D924B4DA81309 /* Pods_KHAFormDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KHAFormDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		253C2F4BF7F0038578233CDCC48E513E /* KHAForm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KHAForm-umbrella.h"; sourceTree = "<group>"; };
+		2AEA956FF1052346964957E42E93A99B /* Pods-KHAFormDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KHAFormDemo.modulemap"; sourceTree = "<group>"; };
+		2E9FAE1BC81008EBFD0CFA5217726828 /* Pods-KHAFormDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KHAFormDemo-umbrella.h"; sourceTree = "<group>"; };
+		2F9DDA9FA3FD44AB949DB76B70BABBEB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48EC391015C9612EA034BF5BC96D821F /* KHAFormViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHAFormViewController.swift; sourceTree = "<group>"; };
+		4B1DA9ED1DC2B57A0060D8AF /* KHADateRepeatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KHADateRepeatViewController.swift; sourceTree = "<group>"; };
+		4B1DA9EF1DC2B7110060D8AF /* KHADateRepeatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KHADateRepeatCell.swift; sourceTree = "<group>"; };
+		4B1DA9F11DC2B7730060D8AF /* KHADayOfWeekCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KHADayOfWeekCell.swift; sourceTree = "<group>"; };
+		58EE3202D29359FEABF783084D230828 /* Pods-KHAFormDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KHAFormDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		5970F5475FA740C1166B3A111DF0539A /* KHASelectionFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHASelectionFormCell.swift; sourceTree = "<group>"; };
+		5CDB4EB87852E2AC4F113C10CF73AF8B /* KHAForm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KHAForm.xcconfig; sourceTree = "<group>"; };
+		601C3C8869860FAECA072DED2CEBB82B /* Pods-KHAFormDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KHAFormDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		66D7BE1F75E916FABA7B41653328E92C /* KHADateFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHADateFormCell.swift; sourceTree = "<group>"; };
+		671376105E2063C4C2D767EB9C1BF7FC /* Pods-KHAFormDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KHAFormDemo-resources.sh"; sourceTree = "<group>"; };
+		79369041183057A859B6956ACF9F5421 /* KHATextViewFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHATextViewFormCell.swift; sourceTree = "<group>"; };
+		7B0F9C1A2292DECB1BDB7B8FE1875367 /* KHAFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHAFormCell.swift; sourceTree = "<group>"; };
+		86504EC463E86E041E4ECC6A7F40D7CB /* KHAForm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KHAForm.modulemap; sourceTree = "<group>"; };
+		9278F266102E8076D8839477E2C02AF1 /* KHASegmentedControlFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHASegmentedControlFormCell.swift; sourceTree = "<group>"; };
+		92F9826320D774DD3ED3D8AE263E7D24 /* Pods-KHAFormDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KHAFormDemo-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A781277AD1B30147CB2E9452882B6B2 /* KHATextFieldFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHATextFieldFormCell.swift; sourceTree = "<group>"; };
+		9DCBAE0D8E1F2A4C2EA40262D8B9F911 /* KHAButtonFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHAButtonFormCell.swift; sourceTree = "<group>"; };
+		9E0770E1E1ABF3C01A43ECEAA4BDAD74 /* Pods-KHAFormDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KHAFormDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9FA38FB047DEFA7AB7193B84F8856D44 /* KHADatePickerFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHADatePickerFormCell.swift; sourceTree = "<group>"; };
+		A7D4B1CC8C422A1E7AD6DE0A05C305A2 /* Pods-KHAFormDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KHAFormDemo-frameworks.sh"; sourceTree = "<group>"; };
+		BBF4B837027F37A490B970473A3B0506 /* KHASwitchFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHASwitchFormCell.swift; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3ED709C9EE0706442D72FBE85C7D1E2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E77B541AD40B8A00E7C20652C5FB7E48 /* Pods-KHAFormDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KHAFormDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EEC92537A974CDBDA96001A71BB8115F /* KHASelectionFormViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KHASelectionFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4A2562F3CEE84DE1A2A1860C1BF759EE /* Frameworks */ = {
+		F4753F9823D31C534E3CBE09B87C0EAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2746D723E9B28D69775EFD838BBC2901 /* Foundation.framework in Frameworks */,
+				44B6440684A16F903C4D30424594F173 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DA6C971D21547E13DE7D965494F1CDC /* Frameworks */ = {
+		F75D8905A2B5054800D12E4122DBCA0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B50FBFDDA28B85F22FD45C81F7A993DA /* Foundation.framework in Frameworks */,
+				9C4A605F3D2BA9A292525DD475DADF41 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B470AC86BAE59ACF1BF692481026310 /* KHAForm */ = {
-			isa = PBXGroup;
-			children = (
-				FE6F845A772FD36EDF6A148AB9FA7D4A /* KHAButtonFormCell.swift */,
-				9799986D8CCDFB5F4B20803B5F032227 /* KHADateFormCell.swift */,
-				4A79C59421FB2927BF4D282FC4CCE1AF /* KHADatePickerFormCell.swift */,
-				B31B04A32A13FA85D80CC3C7D974735D /* KHAFormCell.swift */,
-				558EDD9C593CDA1AED4C297C988CBE7B /* KHAFormViewController.swift */,
-				1E7891CB7869361D4A782A566AD8AA00 /* KHASegmentedControlFormCell.swift */,
-				FBC2E62EC0601F2B6AE2E6D335DD7891 /* KHASelectionFormCell.swift */,
-				00ADAD259AA72A9EB63F3A90B7DEB3AB /* KHASelectionFormViewController.swift */,
-				DB1FF65F930B9418974815BB41C3111C /* KHASwitchFormCell.swift */,
-				584D7F422EC0D98606DAF9AB4C94998A /* KHATextFieldFormCell.swift */,
-				F7032210158395DC307BE3B454CC79C4 /* KHATextViewFormCell.swift */,
-			);
-			path = KHAForm;
-			sourceTree = "<group>";
-		};
-		523341E74878D97466D14F8F5FE49AF1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BF73BB6600A473900E6315DCBA1AA53E /* Info.plist */,
-				E2E7F25F6DCFD76CA1B5530BE9B7E8B3 /* KHAForm.modulemap */,
-				D4F4BD492DA1AEB26DEF97C360646917 /* KHAForm.xcconfig */,
-				68FF8C76BFEE9DD3CF6A06FDC5EA6317 /* KHAForm-Private.xcconfig */,
-				18F06DA51A50D96339AE002854FE79CE /* KHAForm-dummy.m */,
-				187CEF9EF80900EA1A52F127F775FE52 /* KHAForm-prefix.pch */,
-				9567FE5483EBEFF22AD871BF84D59A79 /* KHAForm-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "KHAFormDemo/Pods/Target Support Files/KHAForm";
-			sourceTree = "<group>";
-		};
-		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				103782424C3C2C7EB51CD460750BC496 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		675F07BD86810FAA0D96903E85B259E8 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C1E92DABD04CCB2493EFC1833914DBF0 /* KHAForm */,
+				864489807C05A81062FDC055A20ABE88 /* KHAForm */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
-				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
-				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
-				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
-				E79B2F9D591C5221C26B5F17E38F6729 /* Pods-dummy.m */,
-				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
-				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
-				CF258469C4D60DA197CD137BE1EEB209 /* Pods-umbrella.h */,
-				BCA07B1C10DB45B4C1144F366883E59C /* Pods.debug.xcconfig */,
-				18BD393C83C4360C6E5EC48B1D53BA5F /* Pods.release.xcconfig */,
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
 			);
-			name = Pods;
-			path = "Target Support Files/Pods";
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				675F07BD86810FAA0D96903E85B259E8 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
+				CA451D01160A47E8D49D67C9EE107AAB /* Products */,
+				7DB92A453278B42B1277BED903E10E35 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
+		7DB92A453278B42B1277BED903E10E35 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
+				90B35D37CD1AACE62F2F0BB5FC1B355A /* Pods-KHAFormDemo */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		864489807C05A81062FDC055A20ABE88 /* KHAForm */ = {
 			isa = PBXGroup;
 			children = (
-				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C1E92DABD04CCB2493EFC1833914DBF0 /* KHAForm */ = {
-			isa = PBXGroup;
-			children = (
-				3B470AC86BAE59ACF1BF692481026310 /* KHAForm */,
-				523341E74878D97466D14F8F5FE49AF1 /* Support Files */,
+				F48C4A9470899DCFAC17AA8096A62A2E /* KHAForm */,
+				FCFCDF2AD2F9E74461C068C2C0275C1D /* Support Files */,
 			);
 			name = KHAForm;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+		90B35D37CD1AACE62F2F0BB5FC1B355A /* Pods-KHAFormDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5681F921884D26B730BC5FD02DE7E36A /* KHAForm.framework */,
-				33832ECFD2F273DA532D7E5651B5ECC8 /* Pods.framework */,
+				2F9DDA9FA3FD44AB949DB76B70BABBEB /* Info.plist */,
+				2AEA956FF1052346964957E42E93A99B /* Pods-KHAFormDemo.modulemap */,
+				601C3C8869860FAECA072DED2CEBB82B /* Pods-KHAFormDemo-acknowledgements.markdown */,
+				58EE3202D29359FEABF783084D230828 /* Pods-KHAFormDemo-acknowledgements.plist */,
+				92F9826320D774DD3ED3D8AE263E7D24 /* Pods-KHAFormDemo-dummy.m */,
+				A7D4B1CC8C422A1E7AD6DE0A05C305A2 /* Pods-KHAFormDemo-frameworks.sh */,
+				671376105E2063C4C2D767EB9C1BF7FC /* Pods-KHAFormDemo-resources.sh */,
+				2E9FAE1BC81008EBFD0CFA5217726828 /* Pods-KHAFormDemo-umbrella.h */,
+				9E0770E1E1ABF3C01A43ECEAA4BDAD74 /* Pods-KHAFormDemo.debug.xcconfig */,
+				E77B541AD40B8A00E7C20652C5FB7E48 /* Pods-KHAFormDemo.release.xcconfig */,
+			);
+			name = "Pods-KHAFormDemo";
+			path = "Target Support Files/Pods-KHAFormDemo";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA451D01160A47E8D49D67C9EE107AAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18613C2D5C946F76967D14FB6ECD1709 /* KHAForm.framework */,
+				18CF5954315F0CA7F91D924B4DA81309 /* Pods_KHAFormDemo.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F48C4A9470899DCFAC17AA8096A62A2E /* KHAForm */ = {
+			isa = PBXGroup;
+			children = (
+				9DCBAE0D8E1F2A4C2EA40262D8B9F911 /* KHAButtonFormCell.swift */,
+				66D7BE1F75E916FABA7B41653328E92C /* KHADateFormCell.swift */,
+				9FA38FB047DEFA7AB7193B84F8856D44 /* KHADatePickerFormCell.swift */,
+				4B1DA9EF1DC2B7110060D8AF /* KHADateRepeatCell.swift */,
+				4B1DA9ED1DC2B57A0060D8AF /* KHADateRepeatViewController.swift */,
+				4B1DA9F11DC2B7730060D8AF /* KHADayOfWeekCell.swift */,
+				7B0F9C1A2292DECB1BDB7B8FE1875367 /* KHAFormCell.swift */,
+				48EC391015C9612EA034BF5BC96D821F /* KHAFormViewController.swift */,
+				9278F266102E8076D8839477E2C02AF1 /* KHASegmentedControlFormCell.swift */,
+				5970F5475FA740C1166B3A111DF0539A /* KHASelectionFormCell.swift */,
+				EEC92537A974CDBDA96001A71BB8115F /* KHASelectionFormViewController.swift */,
+				BBF4B837027F37A490B970473A3B0506 /* KHASwitchFormCell.swift */,
+				9A781277AD1B30147CB2E9452882B6B2 /* KHATextFieldFormCell.swift */,
+				79369041183057A859B6956ACF9F5421 /* KHATextViewFormCell.swift */,
+			);
+			path = KHAForm;
+			sourceTree = "<group>";
+		};
+		FCFCDF2AD2F9E74461C068C2C0275C1D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3ED709C9EE0706442D72FBE85C7D1E2 /* Info.plist */,
+				86504EC463E86E041E4ECC6A7F40D7CB /* KHAForm.modulemap */,
+				5CDB4EB87852E2AC4F113C10CF73AF8B /* KHAForm.xcconfig */,
+				176D5145E7C15788CE12E25DAC10E37A /* KHAForm-dummy.m */,
+				14F80A74C01A8C30D1504DB46826CBC1 /* KHAForm-prefix.pch */,
+				253C2F4BF7F0038578233CDCC48E513E /* KHAForm-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "KHAFormDemo/Pods/Target Support Files/KHAForm";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		55570E87F394F17DFD281824F630B07D /* Headers */ = {
+		4086896190FA3FFA71F1A02176C273D9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1BD0AC70A728F690E938DFE646D9DEF /* KHAForm-umbrella.h in Headers */,
+				8F13CDC820FFEA8A8A7A4A501C907239 /* KHAForm-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6969009D5DD0DB545F1455811DB65AF2 /* Headers */ = {
+		F1239C594B0ED8BCC709E1C9E3354A25 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				217FFAE60DDC710976CDCECE79C86D3F /* Pods-umbrella.h in Headers */,
+				E8754348CEEBFE1600741D4599D4C414 /* Pods-KHAFormDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		008D41FA035810C03E8A1A2AE6390E29 /* KHAForm */ = {
+		51696C1BFE88A9E505ED392F7546B736 /* KHAForm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E5323CD17F6E47F6365C5C2DE2B0625E /* Build configuration list for PBXNativeTarget "KHAForm" */;
+			buildConfigurationList = EDC9CF59DA5C080DF2B6D135E8A5C639 /* Build configuration list for PBXNativeTarget "KHAForm" */;
 			buildPhases = (
-				078C2A6B1AA991255123537671FB9A9C /* Sources */,
-				4A2562F3CEE84DE1A2A1860C1BF759EE /* Frameworks */,
-				55570E87F394F17DFD281824F630B07D /* Headers */,
+				2140BBCF24E484799B995ED2ADF8CEED /* Sources */,
+				F75D8905A2B5054800D12E4122DBCA0A /* Frameworks */,
+				4086896190FA3FFA71F1A02176C273D9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -240,25 +247,25 @@
 			);
 			name = KHAForm;
 			productName = KHAForm;
-			productReference = 5681F921884D26B730BC5FD02DE7E36A /* KHAForm.framework */;
+			productReference = 18613C2D5C946F76967D14FB6ECD1709 /* KHAForm.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		95B78832073EF4C01F52D03C9FE2EA9D /* Pods */ = {
+		F499A5076CDF28C72B3B26E4CA3895FA /* Pods-KHAFormDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7C9AE66458E6683681519A0AE6DAD1E /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 773C107B229767668D18146CCD16C4C5 /* Build configuration list for PBXNativeTarget "Pods-KHAFormDemo" */;
 			buildPhases = (
-				753D761CC38908C7AAFC99A6370B8DAC /* Sources */,
-				5DA6C971D21547E13DE7D965494F1CDC /* Frameworks */,
-				6969009D5DD0DB545F1455811DB65AF2 /* Headers */,
+				6E9B3F4AB53B62B799C8A12536DEC42B /* Sources */,
+				F4753F9823D31C534E3CBE09B87C0EAF /* Frameworks */,
+				F1239C594B0ED8BCC709E1C9E3354A25 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7473181E285669EE37EDA467658C32DC /* PBXTargetDependency */,
+				6A4353D3EB93E2C6F886CFA0CE90E759 /* PBXTargetDependency */,
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = 33832ECFD2F273DA532D7E5651B5ECC8 /* Pods.framework */;
+			name = "Pods-KHAFormDemo";
+			productName = "Pods-KHAFormDemo";
+			productReference = 18CF5954315F0CA7F91D924B4DA81309 /* Pods_KHAFormDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -267,8 +274,16 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					51696C1BFE88A9E505ED392F7546B736 = {
+						LastSwiftMigration = 0800;
+					};
+					F499A5076CDF28C72B3B26E4CA3895FA = {
+						LastSwiftMigration = 0800;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -278,115 +293,101 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			productRefGroup = CA451D01160A47E8D49D67C9EE107AAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				008D41FA035810C03E8A1A2AE6390E29 /* KHAForm */,
-				95B78832073EF4C01F52D03C9FE2EA9D /* Pods */,
+				51696C1BFE88A9E505ED392F7546B736 /* KHAForm */,
+				F499A5076CDF28C72B3B26E4CA3895FA /* Pods-KHAFormDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		078C2A6B1AA991255123537671FB9A9C /* Sources */ = {
+		2140BBCF24E484799B995ED2ADF8CEED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93C3FD129391E811A85B95CFDC648528 /* KHAButtonFormCell.swift in Sources */,
-				AF7DAE7E7AE19ED7746E6808AFD8F699 /* KHADateFormCell.swift in Sources */,
-				06A79378239D650E7699FEF237885669 /* KHADatePickerFormCell.swift in Sources */,
-				C5A0484847A83C291F4505E3A068EF99 /* KHAForm-dummy.m in Sources */,
-				043966C8EC8FB457AA1A4104382F35ED /* KHAFormCell.swift in Sources */,
-				1D66EAFAFE7D26C9D6C8804A376916D7 /* KHAFormViewController.swift in Sources */,
-				0C4C2C80D7D1BB0345FB453561912E93 /* KHASegmentedControlFormCell.swift in Sources */,
-				D49859C3B6540C5FB772252BA8AC0306 /* KHASelectionFormCell.swift in Sources */,
-				95867C35E9A1DB9D25B5C41262913B0F /* KHASelectionFormViewController.swift in Sources */,
-				345B46B58F093C170F2BD2CA0D2E22C9 /* KHASwitchFormCell.swift in Sources */,
-				E9CA3A37F296B5C6D90A2BDD60B615FD /* KHATextFieldFormCell.swift in Sources */,
-				7290446D07FFCFE246BD470668156A42 /* KHATextViewFormCell.swift in Sources */,
+				803CDBA7AB136CDBFA89F667D5725C92 /* KHAButtonFormCell.swift in Sources */,
+				F59C5B1721F29EC5D76D80889B9AE3C8 /* KHADateFormCell.swift in Sources */,
+				B7EFA0C145EEC54C8EC1FD16D530C7A6 /* KHADatePickerFormCell.swift in Sources */,
+				E7941A9BBB9EF164FD8F44ED335A072B /* KHAForm-dummy.m in Sources */,
+				772FE8D12E758535D04782845A10B08B /* KHAFormCell.swift in Sources */,
+				40CF0019E2FF8EA62D4CF81D3D9A5D5C /* KHAFormViewController.swift in Sources */,
+				D356DC6F03FBB98F9801D3B48E508245 /* KHASegmentedControlFormCell.swift in Sources */,
+				4B1DA9F01DC2B7110060D8AF /* KHADateRepeatCell.swift in Sources */,
+				C34FF2B34BCD378B055E5B978445BC55 /* KHASelectionFormCell.swift in Sources */,
+				59434CA9CC9D7998AB8A812537E539BC /* KHASelectionFormViewController.swift in Sources */,
+				4B1DA9EE1DC2B57A0060D8AF /* KHADateRepeatViewController.swift in Sources */,
+				619108BF257C59CBCCD60169C464CFBB /* KHASwitchFormCell.swift in Sources */,
+				FB1E715171269DED0FB1D966BC3C746F /* KHATextFieldFormCell.swift in Sources */,
+				A642DE7D81089FB5A2ECE888DCD92C6A /* KHATextViewFormCell.swift in Sources */,
+				4B1DA9F21DC2B7730060D8AF /* KHADayOfWeekCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		753D761CC38908C7AAFC99A6370B8DAC /* Sources */ = {
+		6E9B3F4AB53B62B799C8A12536DEC42B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1526F66259F0F18A7D3A0141ECE269F8 /* Pods-dummy.m in Sources */,
+				AB370C7203273390AB14F31D9BABEB2E /* Pods-KHAFormDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7473181E285669EE37EDA467658C32DC /* PBXTargetDependency */ = {
+		6A4353D3EB93E2C6F886CFA0CE90E759 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KHAForm;
-			target = 008D41FA035810C03E8A1A2AE6390E29 /* KHAForm */;
-			targetProxy = B82F7A1E6C386BAACC7444582BF8B90F /* PBXContainerItemProxy */;
+			target = 51696C1BFE88A9E505ED392F7546B736 /* KHAForm */;
+			targetProxy = D09CAAC31DDE455F4981256EDC4733ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		143A5656D6FB1A5F82155C94507CB285 /* Release */ = {
+		2261A72AACBA953A90312A09E5AF0A02 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68FF8C76BFEE9DD3CF6A06FDC5EA6317 /* KHAForm-Private.xcconfig */;
+			baseConfigurationReference = E77B541AD40B8A00E7C20652C5FB7E48 /* Pods-KHAFormDemo.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.8;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.8;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KHAForm/KHAForm-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KHAForm/Info.plist";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KHAFormDemo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KHAForm/KHAForm.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KHAFormDemo/Pods-KHAFormDemo.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = KHAForm;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KHAFormDemo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		2AA5BA5A9C9230817CE03A67EC9A6BAE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68FF8C76BFEE9DD3CF6A06FDC5EA6317 /* KHAForm-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.8;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.8;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KHAForm/KHAForm-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KHAForm/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KHAForm/KHAForm.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = KHAForm;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+		4D5639C66B2B17451911854E23798FDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -400,11 +401,121 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 3.0;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F607F7D514FCD3BE0FA83E0AF6DA896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CDB4EB87852E2AC4F113C10CF73AF8B /* KHAForm.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KHAForm/KHAForm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KHAForm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KHAForm/KHAForm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KHAForm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		93AC22360127CBDDAB460D1E45442E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CDB4EB87852E2AC4F113C10CF73AF8B /* KHAForm.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KHAForm/KHAForm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KHAForm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KHAForm/KHAForm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KHAForm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		94C4A515C96E50DC69A723E1ABEAC117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -415,105 +526,51 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 3.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		CF376F4F3A9532428F7888BB2FF83CFE /* Debug */ = {
+		E62F9EB05966B32DD113574F7424EB93 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCA07B1C10DB45B4C1144F366883E59C /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 9E0770E1E1ABF3C01A43ECEAA4BDAD74 /* Pods-KHAFormDemo.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KHAFormDemo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KHAFormDemo/Pods-KHAFormDemo.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KHAFormDemo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		E1A0511360CD02FEC0AED6A4AB6D4C76 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18BD393C83C4360C6E5EC48B1D53BA5F /* Pods.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -521,26 +578,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
-				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+				94C4A515C96E50DC69A723E1ABEAC117 /* Debug */,
+				4D5639C66B2B17451911854E23798FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7C9AE66458E6683681519A0AE6DAD1E /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		773C107B229767668D18146CCD16C4C5 /* Build configuration list for PBXNativeTarget "Pods-KHAFormDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CF376F4F3A9532428F7888BB2FF83CFE /* Debug */,
-				E1A0511360CD02FEC0AED6A4AB6D4C76 /* Release */,
+				E62F9EB05966B32DD113574F7424EB93 /* Debug */,
+				2261A72AACBA953A90312A09E5AF0A02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E5323CD17F6E47F6365C5C2DE2B0625E /* Build configuration list for PBXNativeTarget "KHAForm" */ = {
+		EDC9CF59DA5C080DF2B6D135E8A5C639 /* Build configuration list for PBXNativeTarget "KHAForm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AA5BA5A9C9230817CE03A67EC9A6BAE /* Debug */,
-				143A5656D6FB1A5F82155C94507CB285 /* Release */,
+				4F607F7D514FCD3BE0FA83E0AF6DA896 /* Debug */,
+				93AC22360127CBDDAB460D1E45442E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

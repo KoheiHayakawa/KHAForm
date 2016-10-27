@@ -21,11 +21,11 @@ class KHASelectionFormCell: KHAFormCell {
     }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: .Value1, reuseIdentifier: reuseIdentifier)
+        super.init(style: .value1, reuseIdentifier: reuseIdentifier)
 
         textLabel?.text = "Label"
         detailTextLabel?.text = "None"
-        accessoryType = .DisclosureIndicator
+        accessoryType = .disclosureIndicator
     }
     
     required init?(coder aDecoder: NSCoder) {

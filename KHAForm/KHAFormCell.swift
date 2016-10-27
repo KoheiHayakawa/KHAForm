@@ -10,60 +10,60 @@ import UIKit
 
 public enum KHAFormCellType {
     
-    case TextField
-    case SegmentedControl
-    case Switch
-    case Date
-    case DatePicker
-    case TextView
-    case Button
-    case Selection
+    case textField
+    case segmentedControl
+    case `switch`
+    case date
+    case datePicker
+    case textView
+    case button
+    case selection
     
     func cellID() -> String {
         switch self {
-        case .TextField:        return KHATextFieldFormCell.cellID
-        case .SegmentedControl: return KHASegmentedControlFormCell.cellID
-        case .Switch:           return KHASwitchFormCell.cellID
-        case .Date:             return KHADateFormCell.cellID
-        case .DatePicker:       return KHADatePickerFormCell.cellID
-        case .TextView:         return KHATextViewFormCell.cellID
-        case .Button:           return KHAButtonFormCell.cellID
-        case .Selection:        return KHASelectionFormCell.cellID
+        case .textField:        return KHATextFieldFormCell.cellID
+        case .segmentedControl: return KHASegmentedControlFormCell.cellID
+        case .switch:           return KHASwitchFormCell.cellID
+        case .date:             return KHADateFormCell.cellID
+        case .datePicker:       return KHADatePickerFormCell.cellID
+        case .textView:         return KHATextViewFormCell.cellID
+        case .button:           return KHAButtonFormCell.cellID
+        case .selection:        return KHASelectionFormCell.cellID
         }
     }
     
     func cellClass() -> AnyClass {
         switch self {
-        case .TextField:        return KHATextFieldFormCell.self
-        case .SegmentedControl: return KHASegmentedControlFormCell.self
-        case .Switch:           return KHASwitchFormCell.self
-        case .Date:             return KHADateFormCell.self
-        case .DatePicker:       return KHADatePickerFormCell.self
-        case .TextView:         return KHATextViewFormCell.self
-        case .Button:           return KHAButtonFormCell.self
-        case .Selection:        return KHASelectionFormCell.self
+        case .textField:        return KHATextFieldFormCell.self
+        case .segmentedControl: return KHASegmentedControlFormCell.self
+        case .switch:           return KHASwitchFormCell.self
+        case .date:             return KHADateFormCell.self
+        case .datePicker:       return KHADatePickerFormCell.self
+        case .textView:         return KHATextViewFormCell.self
+        case .button:           return KHAButtonFormCell.self
+        case .selection:        return KHASelectionFormCell.self
         }
     }
 }
 
 public protocol KHADateFormCellDelegate {
-    func dateDidChange(date:NSDate)
+    func dateDidChange(_ date:Date)
 }
 
-public class KHAFormCell: UITableViewCell {
+open class KHAFormCell: UITableViewCell {
 
-    public let button: UIButton = UIButton()
-    public var date: NSDate = NSDate()
-    public var dateDelegate:KHADateFormCellDelegate?
-    public var dateFormatter = NSDateFormatter()
-    public var datePickerMode = UIDatePickerMode.DateAndTime
-    public let datePicker: UIDatePicker = UIDatePicker()
-    public var segmentedControl: UISegmentedControl = UISegmentedControl()
-    public let sswitch: UISwitch = UISwitch()
-    public let textField: UITextField = UITextField()
-    public let textView: UIPlaceholderTextView = UIPlaceholderTextView()
-    public var selectionFormViewController = KHASelectionFormViewController()
-    public var customInlineCell: KHAFormCell?
+    open let button: UIButton = UIButton()
+    open var date: Date = Date()
+    open var dateDelegate:KHADateFormCellDelegate?
+    open var dateFormatter = DateFormatter()
+    open var datePickerMode = UIDatePickerMode.dateAndTime
+    open let datePicker: UIDatePicker = UIDatePicker()
+    open var segmentedControl: UISegmentedControl = UISegmentedControl()
+    open let sswitch: UISwitch = UISwitch()
+    open let textField: UITextField = UITextField()
+    open let textView: UIPlaceholderTextView = UIPlaceholderTextView()
+    open var selectionFormViewController = KHASelectionFormViewController()
+    open var customInlineCell: KHAFormCell?
     // MARK: How can I implement class cluster at init?
     // The comment outed code below doesn't work.
     
@@ -91,23 +91,23 @@ public class KHAFormCell: UITableViewCell {
 //    }
 
     
-    public class func formCellWithType(type: KHAFormCellType) -> KHAFormCell {
+    open class func formCellWithType(_ type: KHAFormCellType) -> KHAFormCell {
         switch type {
-        case .TextField:
+        case .textField:
             return KHATextFieldFormCell()
-        case .SegmentedControl:
+        case .segmentedControl:
             return KHASegmentedControlFormCell()
-        case .Switch:
+        case .switch:
             return KHASwitchFormCell()
-        case .Date:
+        case .date:
             return KHADateFormCell()
-        case .DatePicker:
+        case .datePicker:
             return KHADatePickerFormCell()
-        case .TextView:
+        case .textView:
             return KHATextViewFormCell()
-        case .Button:
+        case .button:
             return KHAButtonFormCell()
-        case .Selection:
+        case .selection:
             return KHASelectionFormCell()
         }
     }

@@ -1,3 +1,13 @@
 platform :ios, '9.0'
-pod 'KHAForm', :path => '..'
 use_frameworks!
+
+target "KHAFormDemo" do
+	pod 'KHAForm', :path => '..'
+end
+
+post_install do |installer|
+	installer.pods_project.build_configurations.each do |config|
+		config.build_settings['SWIFT_VERSION'] = "3.0"
+		config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = "YES"
+	end
+end

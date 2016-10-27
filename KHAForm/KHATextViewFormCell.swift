@@ -14,19 +14,19 @@ class KHATextViewFormCell: KHAFormCell {
         return "KHATextViewCell"
     }
     
-    private let kCellHeight: CGFloat = 144
-    private let kFontSize: CGFloat = 16
+    fileprivate let kCellHeight: CGFloat = 144
+    fileprivate let kFontSize: CGFloat = 16
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        selectionStyle = .None
+        selectionStyle = .none
         frame = CGRect(
             x: frame.origin.x,
             y: frame.origin.y,
             width: frame.width,
             height: kCellHeight)
         contentView.addSubview(textView)
-        textView.font = UIFont.systemFontOfSize(kFontSize)
+        textView.font = UIFont.systemFont(ofSize: kFontSize)
         textView.translatesAutoresizingMaskIntoConstraints = false
         
         // TODO: Fix constant value of left and right.
@@ -35,26 +35,26 @@ class KHATextViewFormCell: KHAFormCell {
         contentView.addConstraints([
             NSLayoutConstraint(
                 item: textView,
-                attribute: .Left,
-                relatedBy: .Equal,
+                attribute: .left,
+                relatedBy: .equal,
                 toItem: contentView,
-                attribute: .Left,
+                attribute: .left,
                 multiplier: 1,
                 constant: 10),
             NSLayoutConstraint(
                 item: textView,
-                attribute: .Right,
-                relatedBy: .Equal,
+                attribute: .right,
+                relatedBy: .equal,
                 toItem: contentView,
-                attribute: .Right,
+                attribute: .right,
                 multiplier: 1,
                 constant: -5),
             NSLayoutConstraint(
                 item: textView,
-                attribute: .Height,
-                relatedBy: .Equal,
+                attribute: .height,
+                relatedBy: .equal,
                 toItem: nil,
-                attribute: .NotAnAttribute,
+                attribute: .notAnAttribute,
                 multiplier: 1,
                 constant: kCellHeight)]
         )
@@ -66,26 +66,26 @@ class KHATextViewFormCell: KHAFormCell {
 }
 
 
-public class UIPlaceholderTextView: UITextView {
+open class UIPlaceholderTextView: UITextView {
     
     lazy var placeholderLabel:UILabel = UILabel()
-    var placeholderColor:UIColor      = UIColor.lightGrayColor()
-    public var placeholder:NSString   = ""
+    var placeholderColor:UIColor      = UIColor.lightGray
+    open var placeholder:NSString   = ""
     
     deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
     }
     
-    override public func drawRect(rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
 
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(UIPlaceholderTextView.textChanged(_:)), name: UITextViewTextDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(UIPlaceholderTextView.textChanged(_:)), name: NSNotification.Name.UITextViewTextDidChange, object: nil)
         
         if(self.placeholder.length > 0) {
-            self.placeholderLabel.frame           = CGRectMake(4,8,self.bounds.size.width - 16,0)
-            self.placeholderLabel.lineBreakMode   = NSLineBreakMode.ByWordWrapping
+            self.placeholderLabel.frame           = CGRect(x: 4,y: 8,width: self.bounds.size.width - 16,height: 0)
+            self.placeholderLabel.lineBreakMode   = NSLineBreakMode.byWordWrapping
             self.placeholderLabel.numberOfLines   = 0
             self.placeholderLabel.font            = self.font
-            self.placeholderLabel.backgroundColor = UIColor.clearColor()
+            self.placeholderLabel.backgroundColor = UIColor.clear
             self.placeholderLabel.textColor       = self.placeholderColor
             self.placeholderLabel.alpha           = 0
             self.placeholderLabel.tag             = 999            
@@ -93,15 +93,15 @@ public class UIPlaceholderTextView: UITextView {
             self.placeholderLabel.sizeToFit()
             self.addSubview(placeholderLabel)
         }
-        self.sendSubviewToBack(placeholderLabel)
+        self.sendSubview(toBack: placeholderLabel)
         
         if(self.text.characters.count == 0 && self.placeholder.length > 0){
             self.viewWithTag(999)?.alpha = 1
         }
-        super.drawRect(rect)
+        super.draw(rect)
     }
     
-    internal func textChanged(notification:NSNotification?) -> (Void) {
+    internal func textChanged(_ notification:Notification?) -> (Void) {
         if(self.placeholder.length == 0){
             return
         }
