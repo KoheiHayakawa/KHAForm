@@ -29,6 +29,8 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
     fileprivate var cells = [[KHAFormCell]]()
     fileprivate var datePickerIndexPath: IndexPath?
     fileprivate var customInlineCellIndexPath: IndexPath?
+	private var repeatCellIndexPath: IndexPath?
+	private var dayOfWeekCellIndexPath: IndexPath?
     fileprivate var lastIndexPath: IndexPath? // For selection form cell
     
     // Form is always grouped tableview
@@ -321,6 +323,22 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
             cell.date = targetedDatePicker.date
         }
     }
+	
+	func dateRepeatDidChangeSelectedIndex(_ selectionForm: KHADateRepeatViewController) {
+		let cell = tableView.cellForRow(at: lastIndexPath!) as! KHASelectionFormCell
+	   cell.detailTextLabel?.text = selectionForm.selections[selectionForm.selectedIndex]
+
+		if(selectionForm.selectedIndex == 0) {
+				//should remove day of week picker
+		  }
+
+		//Selected index is not none
+		if(selectionForm.selectedIndex > 0) {
+			   displayCustomInlineCellForRowAtIndexPath(lastIndexPath!)
+		   }
+	}
+	
+	
     
     
     // MARK: - Delegate
@@ -337,4 +355,8 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
         let cell = tableView.cellForRow(at: lastIndexPath!) as! KHASelectionFormCell
         cell.detailTextLabel?.text = selectionForm.selections[selectionForm.selectedIndex]
     }
+	
+	
+	
+	
 }
